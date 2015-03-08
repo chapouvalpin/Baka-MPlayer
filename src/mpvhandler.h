@@ -11,7 +11,7 @@
 
 class MpvHandler : public QObject
 {
-friend class BakaEngine;
+friend class KuroEngine;
     Q_OBJECT
 public:
     explicit MpvHandler(int64_t wid, QObject *parent = 0);

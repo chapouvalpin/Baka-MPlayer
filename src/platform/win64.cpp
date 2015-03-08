@@ -4,7 +4,7 @@ namespace Util {
 
 QString DownloadFileUrl()
 {
-    return "http://bakamplayer.u8sand.net/Baka.MPlayer.64-bit.zip";
+    return "http://kuro-player.u8sand.net/Kuro.Player.64-bit.zip";
 }
 
 }

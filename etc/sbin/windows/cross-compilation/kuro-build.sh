@@ -34,8 +34,8 @@ function download_mpv {
   return 0
 }
 
-function download_baka {
-  cd "$SRC" && git clone https://github.com/u8sand/Baka-MPlayer.git Baka-MPlayer || return 1
+function download_kuro {
+  cd "$SRC" && git clone https://github.com/u8sand/Kuro-Player.git Kuro-Player || return 1
   return 0
 }
 
@@ -118,9 +118,9 @@ function build_mpv {
 	return 0
 }
 
-function build_baka {
-  cd "$BUILD/Baka-MPlayer.$ARCH"
-  echo "Building Baka-MPlayer..."
+function build_kuro {
+  cd "$BUILD/Kuro-Player.$ARCH"
+  echo "Building Kuro-Player..."
   QTROOT=$MXEROOT/usr/$ARCH-w64-mingw32.static/qt5/bin
   QMAKE="$QTROOT/qmake" \
     ./configure \
@@ -134,12 +134,12 @@ function build_baka {
 function build_release {
   echo "Creating release..."
   mkdir -p "$RELEASE"
-  upx "$BUILD/Baka-MPlayer.$ARCH/build/baka-mplayer.exe" -o "$RELEASE/Baka MPlayer.exe" ||
-    cp "$BUILD/Baka-MPlayer.$ARCH/build/baka-mplayer.exe" "$RELEASE/Baka MPlayer.exe"
+  upx "$BUILD/Kuro-Player.$ARCH/build/kuro-player.exe" -o "$RELEASE/Kuro Player.exe" ||
+    cp "$BUILD/Kuro-Player.$ARCH/build/kuro-player.exe" "$RELEASE/Kuro Player.exe"
   # add release stuff
   cp -r "$SRC/release/"* "$RELEASE"
   # compress
-  cd "$RELEASE" && zip "../Baka-MPlayer.$ARCH.zip" -r *
+  cd "$RELEASE" && zip "../Kuro-Player.$ARCH.zip" -r *
   rm -r "$RELEASE"
   return 0
 }
@@ -163,10 +163,10 @@ if [ ! -d "$SRC/mpv" ]; then
   mpv_pid=$!
 fi
 
-if [ ! -d "$SRC/Baka-MPlayer" ]; then
-  echo "Downloading Baka-MPlayer..."
-  download_baka &
-  baka_pid=$!
+if [ ! -d "$SRC/Kuro-Player" ]; then
+  echo "Downloading Kuro-Player..."
+  download_kuro &
+  kuro_pid=$!
 fi
 
 if [ ! -d "$SRC/patches" ]; then
@@ -200,15 +200,15 @@ if [ ! -d "$BUILD/mpv.$ARCH" ] &&
   update mpv && copy mpv && do_patch mpv && build_mpv || exit 1
 fi
 
-if [ ! -d "$BUILD/Baka-MPlayer.$ARCH" ] &&
-   [ wait $baka_pid ] &&
+if [ ! -d "$BUILD/Kuro-Player.$ARCH" ] &&
+   [ wait $kuro_pid ] &&
    [ wait $patches_pid ]; then
-  update "Baka-MPlayer" && copy "Baka-MPlayer" && do_patch "Baka-MPlayer" && build_baka || exit 1
+  update "Kuro-Player" && copy "Kuro-Player" && do_patch "Kuro-Player" && build_kuro || exit 1
 fi
 
 # check releases
 
-if [ ! -f "$DIR/Baka-MPlayer.$ARCH.zip" ] &&
+if [ ! -f "$DIR/Kuro-Player.$ARCH.zip" ] &&
    [ wait $extras_pid ]; then
   build_release || exit 1
 fi

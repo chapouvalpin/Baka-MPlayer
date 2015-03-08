@@ -4,20 +4,20 @@
 <context>
     <name>AboutDialog</name>
     <message>
-        <source>About Baka MPlayer</source>
-        <translation>Informazioni su Baka MPlayer</translation>
+        <source>About Kuro Player</source>
+        <translation>Informazioni su Kuro Player</translation>
     </message>
     <message>
         <source>About</source>
         <translation>Informazioni</translation>
     </message>
     <message>
-        <source>Baka MPlayer 0.0.0</source>
-        <translation>Baka MPlayer 0.0.0</translation>
+        <source>Kuro Player 0.0.0</source>
+        <translation>Kuro Player 0.0.0</translation>
     </message>
     <message>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;b&gt;Baka MPlayer&lt;/b&gt; is a free and open source, cross-platform, &lt;b&gt;libmpv&lt;/b&gt; based multimedia player. Its simple design reflects the idea for an uncluttered, simple, and enjoyable environment for watching tv shows.&lt;br&gt;&lt;br&gt;Copyright © 2014 godly-devotion, u8sand&lt;br&gt;&lt;br&gt;&lt;a href=&quot;https://github.com/u8sand/Baka-MPlayer&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:dodgerblue;&quot;&gt;https://github.com/u8sand/Baka-MPlayer&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="vanished">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;b&gt;Baka MPlayer&lt;/b&gt; è un lettore multimediale libero e a sorgente aperto, multipiattaforma, basato su &lt;b&gt;libmpv&lt;/b&gt;. Il suo design semplice riflette l&apos;idea di un ambiente semplice, ordinato e piacevole per guardare programmi TV.&lt;br&gt;&lt;br&gt;Copyright © 2014 godly-devotion, u8sand&lt;br&gt;&lt;br&gt;&lt;a href=&quot;https://github.com/u8sand/Baka-MPlayer&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:dodgerblue;&quot;&gt;https://github.com/u8sand/Baka-MPlayer&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;b&gt;Kuro Player&lt;/b&gt; is a free and open source, cross-platform, &lt;b&gt;libmpv&lt;/b&gt; based multimedia player. Its simple design reflects the idea for an uncluttered, simple, and enjoyable environment for watching tv shows.&lt;br&gt;&lt;br&gt;Copyright © 2014 godly-devotion, u8sand&lt;br&gt;&lt;br&gt;&lt;a href=&quot;https://github.com/u8sand/Kuro-Player&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:dodgerblue;&quot;&gt;https://github.com/u8sand/Kuro-Player&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="vanished">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;b&gt;Kuro Player&lt;/b&gt; è un lettore multimediale libero e a sorgente aperto, multipiattaforma, basato su &lt;b&gt;libmpv&lt;/b&gt;. Il suo design semplice riflette l&apos;idea di un ambiente semplice, ordinato e piacevole per guardare programmi TV.&lt;br&gt;&lt;br&gt;Copyright © 2014 godly-devotion, u8sand&lt;br&gt;&lt;br&gt;&lt;a href=&quot;https://github.com/u8sand/Kuro-Player&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:dodgerblue;&quot;&gt;https://github.com/u8sand/Kuro-Player&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <source>Credits</source>
@@ -83,20 +83,20 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA</source
         <translation>&amp;CHIUDI</translation>
     </message>
     <message>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;b&gt;Baka MPlayer&lt;/b&gt; is a free and open source, cross-platform, &lt;b&gt;libmpv&lt;/b&gt; based multimedia player. Its simple design reflects the idea for an uncluttered, simple, and enjoyable environment for watching tv shows.&lt;br&gt;&lt;br&gt;Copyright © 2015 godly-devotion, u8sand&lt;br&gt;&lt;br&gt;&lt;a href=&quot;https://github.com/u8sand/Baka-MPlayer&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:dodgerblue;&quot;&gt;https://github.com/u8sand/Baka-MPlayer&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;b&gt;Baka MPlayer&lt;/b&gt; è un lettore multimediale libero e a sorgente aperto, multipiattaforma, basato su &lt;b&gt;libmpv&lt;/b&gt;. Il suo design semplice riflette l&apos;idea di un ambiente semplice, ordinato e piacevole per guardare programmi TV.&lt;br&gt;&lt;br&gt;Copyright © 2014 godly-devotion, u8sand&lt;br&gt;&lt;br&gt;&lt;a href=&quot;https://github.com/u8sand/Baka-MPlayer&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:dodgerblue;&quot;&gt;https://github.com/u8sand/Baka-MPlayer&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt; {2015 ?} {8s?} {8s?} {8s?}</translation>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;b&gt;Kuro Player&lt;/b&gt; is a free and open source, cross-platform, &lt;b&gt;libmpv&lt;/b&gt; based multimedia player. Its simple design reflects the idea for an uncluttered, simple, and enjoyable environment for watching tv shows.&lt;br&gt;&lt;br&gt;Copyright © 2015 godly-devotion, u8sand&lt;br&gt;&lt;br&gt;&lt;a href=&quot;https://github.com/u8sand/Kuro-Player&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:dodgerblue;&quot;&gt;https://github.com/u8sand/Kuro-Player&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;b&gt;Kuro Player&lt;/b&gt; è un lettore multimediale libero e a sorgente aperto, multipiattaforma, basato su &lt;b&gt;libmpv&lt;/b&gt;. Il suo design semplice riflette l&apos;idea di un ambiente semplice, ordinato e piacevole per guardare programmi TV.&lt;br&gt;&lt;br&gt;Copyright © 2014 godly-devotion, u8sand&lt;br&gt;&lt;br&gt;&lt;a href=&quot;https://github.com/u8sand/Kuro-Player&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:dodgerblue;&quot;&gt;https://github.com/u8sand/Kuro-Player&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt; {2015 ?} {8s?} {8s?} {8s?}</translation>
     </message>
 </context>
 <context>
-    <name>BakaEngine</name>
+    <name>KuroEngine</name>
     <message>
         <source>Settings version not recognized</source>
         <translation type="unfinished">Versione file di impostazioni non riconosciuta</translation>
     </message>
     <message>
-        <source>The settings file was made by a newer version of baka-mplayer; please upgrade this version or seek assistance from the developers.
+        <source>The settings file was made by a newer version of kuro-player; please upgrade this version or seek assistance from the developers.
 Some features may not work and changed settings will not be saved.</source>
-        <translation type="unfinished">Il file di impostazioni è stato creato da una versione di baka-mplayer più recente; aggiorna questa versione o richiedi assistenza agli sviluppatori.
+        <translation type="unfinished">Il file di impostazioni è stato creato da una versione di kuro-player più recente; aggiorna questa versione o richiedi assistenza agli sviluppatori.
 Alcune funzionalità potrebbero non essere disponibili e le impostazioni modificate non verranno salvate.</translation>
     </message>
     <message>
@@ -127,8 +127,8 @@ Alcune funzionalità potrebbero non essere disponibili e le impostazioni modific
         <translation type="unfinished">File sottotitoli</translation>
     </message>
     <message>
-        <source>http://bakamplayer.u8sand.net/help.php</source>
-        <translation type="unfinished">http://bakamplayer.u8sand.net/help.php</translation>
+        <source>http://kuro-player.u8sand.net/help.php</source>
+        <translation type="unfinished">http://kuro-player.u8sand.net/help.php</translation>
     </message>
     <message>
         <source>Open File</source>
@@ -561,8 +561,8 @@ Alcune funzionalità potrebbero non essere disponibili e le impostazioni modific
 <context>
     <name>MainWindow</name>
     <message>
-        <source>Baka MPlayer</source>
-        <translation>Baka MPlayer</translation>
+        <source>Kuro Player</source>
+        <translation>Kuro Player</translation>
     </message>
     <message>
         <source>&gt;</source>
@@ -869,8 +869,8 @@ Alcune funzionalità potrebbero non essere disponibili e le impostazioni modific
         <translation>Informazioni su &amp;Qt</translation>
     </message>
     <message>
-        <source>About &amp;Baka MPlayer</source>
-        <translation>Informazioni su &amp;Baka MPlayer</translation>
+        <source>About &amp;Kuro Player</source>
+        <translation>Informazioni su &amp;Kuro Player</translation>
     </message>
     <message>
         <source>To &amp;Current Size</source>
@@ -1107,17 +1107,17 @@ Nota: Il valore deve essere compreso tra %0 e %1</translation>
         <translation type="vanished">File sottotitoli</translation>
     </message>
     <message>
-        <source>http://bakamplayer.u8sand.net/help.php</source>
-        <translation type="vanished">http://bakamplayer.u8sand.net/help.php</translation>
+        <source>http://kuro-player.u8sand.net/help.php</source>
+        <translation type="vanished">http://kuro-player.u8sand.net/help.php</translation>
     </message>
     <message>
         <source>Settings version not recognized</source>
         <translation type="obsolete">Versione file di impostazioni non riconosciuta</translation>
     </message>
     <message>
-        <source>The settings file was made by a newer version of baka-mplayer; please upgrade this version or seek assistance from the developers.
+        <source>The settings file was made by a newer version of kuro-player; please upgrade this version or seek assistance from the developers.
 Some features may not work and changed settings will not be saved.</source>
-        <translation type="obsolete">Il file di impostazioni è stato creato da una versione di baka-mplayer più recente; aggiorna questa versione o richiedi assistenza agli sviluppatori.
+        <translation type="obsolete">Il file di impostazioni è stato creato da una versione di kuro-player più recente; aggiorna questa versione o richiedi assistenza agli sviluppatori.
 Alcune funzionalità potrebbero non essere disponibili e le impostazioni modificate non verranno salvate.</translation>
     </message>
     <message>

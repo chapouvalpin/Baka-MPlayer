@@ -14,7 +14,7 @@ namespace Util {
 
 QString VersionFileUrl()
 {
-    return "http://bakamplayer.u8sand.net/version_windows";
+    return "http://kuro-player.u8sand.net/version_windows";
 }
 
 bool DimLightsSupported()

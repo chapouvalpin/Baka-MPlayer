@@ -4,20 +4,20 @@
 <context>
     <name>AboutDialog</name>
     <message>
-        <source>About Baka MPlayer</source>
-        <translation>О программе Baka MPlayer</translation>
+        <source>About Kuro Player</source>
+        <translation>О программе Kuro Player</translation>
     </message>
     <message>
         <source>About</source>
         <translation>О программе</translation>
     </message>
     <message>
-        <source>Baka MPlayer 0.0.0</source>
-        <translation>Baka MPlayer 0.0.0</translation>
+        <source>Kuro Player 0.0.0</source>
+        <translation>Kuro Player 0.0.0</translation>
     </message>
     <message>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;b&gt;Baka MPlayer&lt;/b&gt; is a free and open source, cross-platform, &lt;b&gt;libmpv&lt;/b&gt; based multimedia player. Its simple design reflects the idea for an uncluttered, simple, and enjoyable environment for watching tv shows.&lt;br&gt;&lt;br&gt;Copyright © 2014 godly-devotion, u8sand&lt;br&gt;&lt;br&gt;&lt;a href=&quot;https://github.com/u8sand/Baka-MPlayer&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:dodgerblue;&quot;&gt;https://github.com/u8sand/Baka-MPlayer&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="vanished">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;b&gt;Baka MPlayer&lt;/b&gt; — свободный и кросс-платформенный медиаплеер, основанный на &lt;b&gt;libmpv&lt;/b&gt;. Его простой дизайн отражает идею не перегруженного, простого и приятного окружения для просмотра телевизионных передач.&lt;br&gt;&lt;br&gt;Копирайт © 2014 godly-devotion, u8sand&lt;br&gt;&lt;br&gt;&lt;a href=&quot;https://github.com/u8sand/Baka-MPlayer&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:dodgerblue;&quot;&gt;https://github.com/u8sand/Baka-MPlayer&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;b&gt;Kuro Player&lt;/b&gt; is a free and open source, cross-platform, &lt;b&gt;libmpv&lt;/b&gt; based multimedia player. Its simple design reflects the idea for an uncluttered, simple, and enjoyable environment for watching tv shows.&lt;br&gt;&lt;br&gt;Copyright © 2014 godly-devotion, u8sand&lt;br&gt;&lt;br&gt;&lt;a href=&quot;https://github.com/u8sand/Kuro-Player&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:dodgerblue;&quot;&gt;https://github.com/u8sand/Kuro-Player&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="vanished">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;b&gt;Kuro Player&lt;/b&gt; — свободный и кросс-платформенный медиаплеер, основанный на &lt;b&gt;libmpv&lt;/b&gt;. Его простой дизайн отражает идею не перегруженного, простого и приятного окружения для просмотра телевизионных передач.&lt;br&gt;&lt;br&gt;Копирайт © 2014 godly-devotion, u8sand&lt;br&gt;&lt;br&gt;&lt;a href=&quot;https://github.com/u8sand/Kuro-Player&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:dodgerblue;&quot;&gt;https://github.com/u8sand/Kuro-Player&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <source>Credits</source>
@@ -96,18 +96,18 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA</source
         <translation>&amp;Закрыть</translation>
     </message>
     <message>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;b&gt;Baka MPlayer&lt;/b&gt; is a free and open source, cross-platform, &lt;b&gt;libmpv&lt;/b&gt; based multimedia player. Its simple design reflects the idea for an uncluttered, simple, and enjoyable environment for watching tv shows.&lt;br&gt;&lt;br&gt;Copyright © 2015 godly-devotion, u8sand&lt;br&gt;&lt;br&gt;&lt;a href=&quot;https://github.com/u8sand/Baka-MPlayer&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:dodgerblue;&quot;&gt;https://github.com/u8sand/Baka-MPlayer&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;b&gt;Baka MPlayer&lt;/b&gt; — свободный и кросс-платформенный медиаплеер, основанный на &lt;b&gt;libmpv&lt;/b&gt;. Его простой дизайн отражает идею не перегруженного, простого и приятного окружения для просмотра телевизионных передач.&lt;br&gt;&lt;br&gt;Копирайт © 2014 godly-devotion, u8sand&lt;br&gt;&lt;br&gt;&lt;a href=&quot;https://github.com/u8sand/Baka-MPlayer&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:dodgerblue;&quot;&gt;https://github.com/u8sand/Baka-MPlayer&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt; {2015 ?} {8s?} {8s?} {8s?}</translation>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;b&gt;Kuro Player&lt;/b&gt; is a free and open source, cross-platform, &lt;b&gt;libmpv&lt;/b&gt; based multimedia player. Its simple design reflects the idea for an uncluttered, simple, and enjoyable environment for watching tv shows.&lt;br&gt;&lt;br&gt;Copyright © 2015 godly-devotion, u8sand&lt;br&gt;&lt;br&gt;&lt;a href=&quot;https://github.com/u8sand/Kuro-Player&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:dodgerblue;&quot;&gt;https://github.com/u8sand/Kuro-Player&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;b&gt;Kuro Player&lt;/b&gt; — свободный и кросс-платформенный медиаплеер, основанный на &lt;b&gt;libmpv&lt;/b&gt;. Его простой дизайн отражает идею не перегруженного, простого и приятного окружения для просмотра телевизионных передач.&lt;br&gt;&lt;br&gt;Копирайт © 2014 godly-devotion, u8sand&lt;br&gt;&lt;br&gt;&lt;a href=&quot;https://github.com/u8sand/Kuro-Player&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:dodgerblue;&quot;&gt;https://github.com/u8sand/Kuro-Player&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt; {2015 ?} {8s?} {8s?} {8s?}</translation>
     </message>
 </context>
 <context>
-    <name>BakaEngine</name>
+    <name>KuroEngine</name>
     <message>
         <source>Settings version not recognized</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>The settings file was made by a newer version of baka-mplayer; please upgrade this version or seek assistance from the developers.
+        <source>The settings file was made by a newer version of kuro-player; please upgrade this version or seek assistance from the developers.
 Some features may not work and changed settings will not be saved.</source>
         <translation type="unfinished"></translation>
     </message>
@@ -139,8 +139,8 @@ Some features may not work and changed settings will not be saved.</source>
         <translation type="unfinished">Файлы субтитров</translation>
     </message>
     <message>
-        <source>http://bakamplayer.u8sand.net/help.php</source>
-        <translation type="unfinished">http://bakamplayer.u8sand.net/help.php</translation>
+        <source>http://kuro-player.u8sand.net/help.php</source>
+        <translation type="unfinished">http://kuro-player.u8sand.net/help.php</translation>
     </message>
     <message>
         <source>Open File</source>
@@ -573,8 +573,8 @@ Some features may not work and changed settings will not be saved.</source>
 <context>
     <name>MainWindow</name>
     <message>
-        <source>Baka MPlayer</source>
-        <translation>Baka MPlayer</translation>
+        <source>Kuro Player</source>
+        <translation>Kuro Player</translation>
     </message>
     <message>
         <source>&gt;</source>
@@ -893,8 +893,8 @@ Some features may not work and changed settings will not be saved.</source>
         <translation>О &amp;Qt</translation>
     </message>
     <message>
-        <source>About &amp;Baka MPlayer</source>
-        <translation>О &amp;Baka MPlayer</translation>
+        <source>About &amp;Kuro Player</source>
+        <translation>О &amp;Kuro Player</translation>
     </message>
     <message>
         <source>To &amp;Current Size</source>
@@ -1126,8 +1126,8 @@ Note: Value must be from %0 - %1</source>
         <translation type="vanished">Файлы субтитров</translation>
     </message>
     <message>
-        <source>http://bakamplayer.u8sand.net/help.php</source>
-        <translation type="vanished">http://bakamplayer.u8sand.net/help.php</translation>
+        <source>http://kuro-player.u8sand.net/help.php</source>
+        <translation type="vanished">http://kuro-player.u8sand.net/help.php</translation>
     </message>
     <message>
         <source>Saved to &quot;%0&quot;, with subs</source>

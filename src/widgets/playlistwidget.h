@@ -6,7 +6,7 @@
 #include <QDropEvent>
 #include <QAction>
 
-class BakaEngine;
+class KuroEngine;
 
 class PlaylistWidget : public QListWidget
 {
@@ -14,7 +14,7 @@ class PlaylistWidget : public QListWidget
 public:
     explicit PlaylistWidget(QWidget *parent = 0);
 
-    void AttachEngine(BakaEngine *baka);
+    void AttachEngine(KuroEngine *kuro);
 
 public slots:
     void Populate();
@@ -41,7 +41,7 @@ protected:
     void dropEvent(QDropEvent *event);
 
 private:
-    BakaEngine *baka;
+    KuroEngine *kuro;
 
     QStringList playlist;
     QString file, suffix;

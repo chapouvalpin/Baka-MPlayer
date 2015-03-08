@@ -9,17 +9,17 @@ namespace Ui {
 class UpdateDialog;
 }
 
-class BakaEngine;
+class KuroEngine;
 
 class UpdateDialog : public QDialog
 {
     Q_OBJECT
 
 public:
-    explicit UpdateDialog(BakaEngine *baka, QWidget *parent = 0);
+    explicit UpdateDialog(KuroEngine *kuro, QWidget *parent = 0);
     ~UpdateDialog();
 
-    static void CheckForUpdates(BakaEngine *baka, QWidget *parent = 0);
+    static void CheckForUpdates(KuroEngine *kuro, QWidget *parent = 0);
 
 protected slots:
     void Prepare();
@@ -27,7 +27,7 @@ protected slots:
 
 private:
     Ui::UpdateDialog *ui;
-    BakaEngine *baka;
+    KuroEngine *kuro;
 
     QTime *timer;
     double avgSpeed = 1,

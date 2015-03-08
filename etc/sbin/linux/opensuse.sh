@@ -15,11 +15,11 @@ sudo ./install
 sudo mv /usr/lib64/pkgconfig/mpv.pc /usr/share/pkgconfig/
 cd ..
 
-# build baka-mplayer
-git clone https://github.com/u8sand/Baka-MPlayer.git
-cd Baka-MPlayer
+# build kuro-player
+git clone https://github.com/u8sand/Kuro-Player.git
+cd Kuro-Player
 QMAKE=/usr/lib64/x86_64-linux-gnu/qt5/bin/qmake ./configure
 make -j${JOBS}
-# install baka-mplayer
+# install kuro-player
 sudo make install
 cd ..

@@ -6,7 +6,7 @@
 #include <QMap>
 #include <QString>
 
-class BakaEngine;
+class KuroEngine;
 
 class UpdateManager : public QObject
 {
@@ -30,7 +30,7 @@ signals:
     void messageSignal(QString msg);
 
 private:
-    BakaEngine *baka;
+    KuroEngine *kuro;
 
     QNetworkAccessManager *manager;
     QMap<QString, QString> info;

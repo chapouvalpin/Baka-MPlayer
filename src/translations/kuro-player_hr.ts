@@ -4,20 +4,20 @@
 <context>
     <name>AboutDialog</name>
     <message>
-        <source>About Baka MPlayer</source>
-        <translation type="unfinished">O Baka MPlayeru</translation>
+        <source>About Kuro Player</source>
+        <translation type="unfinished">O Kuro Playeru</translation>
     </message>
     <message>
         <source>About</source>
         <translation type="unfinished">O programu</translation>
     </message>
     <message>
-        <source>Baka MPlayer 0.0.0</source>
-        <translation>Baka MPlayer 0.0.0</translation>
+        <source>Kuro Player 0.0.0</source>
+        <translation>Kuro Player 0.0.0</translation>
     </message>
     <message>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;b&gt;Baka MPlayer&lt;/b&gt; is a free and open source, cross-platform, &lt;b&gt;libmpv&lt;/b&gt; based multimedia player. Its simple design reflects the idea for an uncluttered, simple, and enjoyable environment for watching tv shows.&lt;br&gt;&lt;br&gt;Copyright © 2014 godly-devotion, u8sand&lt;br&gt;&lt;br&gt;&lt;a href=&quot;https://github.com/u8sand/Baka-MPlayer&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:dodgerblue;&quot;&gt;https://github.com/u8sand/Baka-MPlayer&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;b&gt;Baka MPlayer&lt;/b&gt; je slobodan i otvorenog kôda, višeplatformski &lt;b&gt;libmpv&lt;/b&gt;. temeljen multimedijski reproduktor. Jednostavnog dizajna odražava ideju preglednog jednostavnog i ugodnog okruženja za gledanje TV emisija.&lt;br&gt;&lt;br&gt;Autorsko pravo © 2014 godly-devotion, u8sand&lt;br&gt;&lt;br&gt;&lt;a href=&quot;https://github.com/u8sand/Baka-MPlayer&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:dodgerblue;&quot;&gt;https://github.com/u8sand/Baka-MPlayer&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;b&gt;Kuro Player&lt;/b&gt; is a free and open source, cross-platform, &lt;b&gt;libmpv&lt;/b&gt; based multimedia player. Its simple design reflects the idea for an uncluttered, simple, and enjoyable environment for watching tv shows.&lt;br&gt;&lt;br&gt;Copyright © 2014 godly-devotion, u8sand&lt;br&gt;&lt;br&gt;&lt;a href=&quot;https://github.com/u8sand/Kuro-Player&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:dodgerblue;&quot;&gt;https://github.com/u8sand/Kuro-Player&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;b&gt;Kuro Player&lt;/b&gt; je slobodan i otvorenog kôda, višeplatformski &lt;b&gt;libmpv&lt;/b&gt;. temeljen multimedijski reproduktor. Jednostavnog dizajna odražava ideju preglednog jednostavnog i ugodnog okruženja za gledanje TV emisija.&lt;br&gt;&lt;br&gt;Autorsko pravo © 2014 godly-devotion, u8sand&lt;br&gt;&lt;br&gt;&lt;a href=&quot;https://github.com/u8sand/Kuro-Player&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:dodgerblue;&quot;&gt;https://github.com/u8sand/Kuro-Player&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <source>Credits</source>
@@ -100,20 +100,20 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA</transl
         <translation type="unfinished">&amp;ZATVORI</translation>
     </message>
     <message>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;b&gt;Baka MPlayer&lt;/b&gt; is a free and open source, cross-platform, &lt;b&gt;libmpv&lt;/b&gt; based multimedia player. Its simple design reflects the idea for an uncluttered, simple, and enjoyable environment for watching tv shows.&lt;br&gt;&lt;br&gt;Copyright © 2015 godly-devotion, u8sand&lt;br&gt;&lt;br&gt;&lt;a href=&quot;https://github.com/u8sand/Baka-MPlayer&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:dodgerblue;&quot;&gt;https://github.com/u8sand/Baka-MPlayer&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;b&gt;Baka MPlayer&lt;/b&gt; je slobodan i otvorenog kôda, višeplatformski &lt;b&gt;libmpv&lt;/b&gt;. temeljen multimedijski reproduktor. Jednostavnog dizajna odražava ideju preglednog jednostavnog i ugodnog okruženja za gledanje TV emisija.&lt;br&gt;&lt;br&gt;Autorsko pravo © 2014 godly-devotion, u8sand&lt;br&gt;&lt;br&gt;&lt;a href=&quot;https://github.com/u8sand/Baka-MPlayer&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:dodgerblue;&quot;&gt;https://github.com/u8sand/Baka-MPlayer&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;b&gt;Kuro Player&lt;/b&gt; is a free and open source, cross-platform, &lt;b&gt;libmpv&lt;/b&gt; based multimedia player. Its simple design reflects the idea for an uncluttered, simple, and enjoyable environment for watching tv shows.&lt;br&gt;&lt;br&gt;Copyright © 2015 godly-devotion, u8sand&lt;br&gt;&lt;br&gt;&lt;a href=&quot;https://github.com/u8sand/Kuro-Player&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:dodgerblue;&quot;&gt;https://github.com/u8sand/Kuro-Player&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;b&gt;Kuro Player&lt;/b&gt; je slobodan i otvorenog kôda, višeplatformski &lt;b&gt;libmpv&lt;/b&gt;. temeljen multimedijski reproduktor. Jednostavnog dizajna odražava ideju preglednog jednostavnog i ugodnog okruženja za gledanje TV emisija.&lt;br&gt;&lt;br&gt;Autorsko pravo © 2014 godly-devotion, u8sand&lt;br&gt;&lt;br&gt;&lt;a href=&quot;https://github.com/u8sand/Kuro-Player&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:dodgerblue;&quot;&gt;https://github.com/u8sand/Kuro-Player&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
 </context>
 <context>
-    <name>BakaEngine</name>
+    <name>KuroEngine</name>
     <message>
         <source>Settings version not recognized</source>
         <translation type="unfinished">Inačica postavki nije prepoznata</translation>
     </message>
     <message>
-        <source>The settings file was made by a newer version of baka-mplayer; please upgrade this version or seek assistance from the developers.
+        <source>The settings file was made by a newer version of kuro-player; please upgrade this version or seek assistance from the developers.
 Some features may not work and changed settings will not be saved.</source>
-        <translation type="unfinished">Datoteka postavki je napravljena s novijom inačicom Baka-mplayera; nadogradite na noviju inačicu ili potražite pomoć razvijatelja.
+        <translation type="unfinished">Datoteka postavki je napravljena s novijom inačicom Kuro-mplayera; nadogradite na noviju inačicu ili potražite pomoć razvijatelja.
 Neke značajke možda neće raditi i promjenjene postavke neće biti spremljene.</translation>
     </message>
     <message>
@@ -144,8 +144,8 @@ Neke značajke možda neće raditi i promjenjene postavke neće biti spremljene.
         <translation type="unfinished">Datoteka podnaslova</translation>
     </message>
     <message>
-        <source>http://bakamplayer.u8sand.net/help.php</source>
-        <translation type="unfinished">http://bakamplayer.u8sand.net/help.php</translation>
+        <source>http://kuro-player.u8sand.net/help.php</source>
+        <translation type="unfinished">http://kuro-player.u8sand.net/help.php</translation>
     </message>
     <message>
         <source>Open File</source>
@@ -578,8 +578,8 @@ Neke značajke možda neće raditi i promjenjene postavke neće biti spremljene.
 <context>
     <name>MainWindow</name>
     <message>
-        <source>Baka MPlayer</source>
-        <translation>Baka MPlayer</translation>
+        <source>Kuro Player</source>
+        <translation>Kuro Player</translation>
     </message>
     <message>
         <source>&gt;</source>
@@ -886,8 +886,8 @@ Neke značajke možda neće raditi i promjenjene postavke neće biti spremljene.
         <translation type="unfinished">O &amp;Qt</translation>
     </message>
     <message>
-        <source>About &amp;Baka MPlayer</source>
-        <translation type="unfinished">O &amp;Baka MPlayeru</translation>
+        <source>About &amp;Kuro Player</source>
+        <translation type="unfinished">O &amp;Kuro Playeru</translation>
     </message>
     <message>
         <source>To &amp;Current Size</source>
@@ -1124,17 +1124,17 @@ Napomena: vrijednost mora biti %0 - %1</translation>
         <translation>Datoteke podnaslova</translation>
     </message>
     <message>
-        <source>http://bakamplayer.u8sand.net/help.php</source>
-        <translation>http://bakamplayer.u8sand.net/help.php</translation>
+        <source>http://kuro-player.u8sand.net/help.php</source>
+        <translation>http://kuro-player.u8sand.net/help.php</translation>
     </message>
     <message>
         <source>Settings version not recognized</source>
         <translation type="obsolete">Inačica postavki neprepoznata</translation>
     </message>
     <message>
-        <source>The settings file was made by a newer version of baka-mplayer; please upgrade this version or seek assistance from the developers.
+        <source>The settings file was made by a newer version of kuro-player; please upgrade this version or seek assistance from the developers.
 Some features may not work and changed settings will not be saved.</source>
-        <translation type="obsolete">Datoteka postavki napravljena je novijom inačicom Baka-playera; nadogradite inačicu ili potražite pomoć razvijatelja.
+        <translation type="obsolete">Datoteka postavki napravljena je novijom inačicom Kuro-playera; nadogradite inačicu ili potražite pomoć razvijatelja.
 Neke značajke možda neće raditi i promijenjene postavke neće biti spremljene.</translation>
     </message>
     <message>

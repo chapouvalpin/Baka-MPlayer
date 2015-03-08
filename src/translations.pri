@@ -1,8 +1,8 @@
 TRANSLATIONS += \
-    translations/baka-mplayer_hr.ts \
-    translations/baka-mplayer_nl.ts \
-    translations/baka-mplayer_pt.ts \
-    translations/baka-mplayer_ru.ts \
-    translations/baka-mplayer_ko.ts \
-    translations/baka-mplayer_zh_CN.ts \
-    translations/baka-mplayer_it.ts
+    translations/kuro-player_hr.ts \
+    translations/kuro-player_nl.ts \
+    translations/kuro-player_pt.ts \
+    translations/kuro-player_ru.ts \
+    translations/kuro-player_ko.ts \
+    translations/kuro-player_zh_CN.ts \
+    translations/kuro-player_it.ts

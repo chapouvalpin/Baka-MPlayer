@@ -1,6 +1,6 @@
 #include "playlistwidget.h"
 
-#include "bakaengine.h"
+#include "kuroengine.h"
 #include "mpvhandler.h"
 
 #include <QListWidgetItem>
@@ -18,10 +18,10 @@ PlaylistWidget::PlaylistWidget(QWidget *parent) :
     setAttribute(Qt::WA_NoMousePropagation);
 }
 
-void PlaylistWidget::AttachEngine(BakaEngine *baka)
+void PlaylistWidget::AttachEngine(KuroEngine *kuro)
 {
-    this->baka = baka;
-    connect(baka->mpv, &MpvHandler::playlistChanged,
+    this->kuro = kuro;
+    connect(kuro->mpv, &MpvHandler::playlistChanged,
             [=](const QStringList &list)
             {
                 playlist = list;
@@ -34,7 +34,7 @@ void PlaylistWidget::AttachEngine(BakaEngine *baka)
                 }
             });
 
-    connect(baka->mpv, &MpvHandler::fileChanged,
+    connect(kuro->mpv, &MpvHandler::fileChanged,
             [=](QString f)
             {
                 if(newPlaylist)
@@ -96,7 +96,7 @@ void PlaylistWidget::Populate()
 void PlaylistWidget::RefreshPlaylist()
 {
     refresh = true;
-    baka->mpv->LoadPlaylist(baka->mpv->getPath()+file);
+    kuro->mpv->LoadPlaylist(kuro->mpv->getPath()+file);
 }
 
 QString PlaylistWidget::CurrentItem()
@@ -151,7 +151,7 @@ void PlaylistWidget::PlayIndex(int index, bool relative)
     QListWidgetItem *current = item(newIndex);
     if(current != nullptr)
     {
-        baka->mpv->PlayFile(current->text());
+        kuro->mpv->PlayFile(current->text());
         scrollToItem(current);
     }
 }
@@ -275,7 +275,7 @@ void PlaylistWidget::RemoveFromPlaylist(QListWidgetItem *item)
 void PlaylistWidget::DeleteFromDisk(QListWidgetItem *item)
 {
     playlist.removeOne(item->text());
-    QFile f(baka->mpv->getPath()+item->text());
+    QFile f(kuro->mpv->getPath()+item->text());
     f.remove();
     delete item;
     emit currentRowChanged(currentRow());

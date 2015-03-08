@@ -32,6 +32,6 @@ notifications:
   email: false
   irc:
     channels:
-      - "irc.freenode.org#baka-mplayer-dev"
+      - "irc.freenode.org#kuro-player-dev"
     on_success: change
     on_failure: always

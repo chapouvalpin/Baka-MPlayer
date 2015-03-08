@@ -20,7 +20,7 @@
    <bool>true</bool>
   </property>
   <property name="windowTitle">
-   <string>Baka MPlayer</string>
+   <string>Kuro Player</string>
   </property>
   <property name="windowIcon">
    <iconset resource="../rsclist.qrc">
@@ -1174,7 +1174,7 @@ QSlider::handle:horizontal {
     <addaction name="actionUpdate_Streaming_Support"/>
     <addaction name="separator"/>
     <addaction name="actionAbout_Qt"/>
-    <addaction name="actionAbout_Baka_MPlayer"/>
+    <addaction name="actionAbout_Kuro_Player"/>
    </widget>
    <addaction name="menu_File"/>
    <addaction name="menu_View"/>
@@ -1397,9 +1397,9 @@ QSlider::handle:horizontal {
     <string>About &amp;Qt</string>
    </property>
   </action>
-  <action name="actionAbout_Baka_MPlayer">
+  <action name="actionAbout_Kuro_Player">
    <property name="text">
-    <string>About &amp;Baka MPlayer</string>
+    <string>About &amp;Kuro Player</string>
    </property>
   </action>
   <action name="action_To_Current_Size">

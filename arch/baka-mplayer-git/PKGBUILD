@@ -1,9 +1,9 @@
 # Maintainer: u8sand <u8sand@gmail.com>
-pkgname=baka-mplayer-git
+pkgname=kuro-player-git
 pkgver=2.0.2
 pkgrel=1
-pkgdesc="Baka MPlayer is a free and open source, cross-platform, libmpv based multimedia player."
-url="http://bakamplayer.u8sand.net/"
+pkgdesc="Kuro Player is a free and open source, cross-platform, libmpv based multimedia player."
+url="http://kuro-player.u8sand.net/"
 arch=('x86_64' 'i686')
 license=('GPLv2')
 depends=('mpv' 'qt5-base' 'qt5-declarative' 'qt5-svg' 'qt5-x11extras')
@@ -13,10 +13,10 @@ optdepends=(
   'mpv-git: bleeding-edge mpv features'
   'youtube-dl: support for remote video streaming'
 )
-conflicts=('bakamplayer' 'baka-mplayer')
-provides=('baka-mplayer')
+conflicts=('kuro-player' 'kuro-player')
+provides=('kuro-player')
 
-_gitroot="https://github.com/u8sand/Baka-MPlayer.git"
+_gitroot="https://github.com/u8sand/Kuro-Player.git"
 _gitname="master"
 
 build() {

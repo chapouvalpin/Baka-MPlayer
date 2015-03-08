@@ -9,7 +9,7 @@
 #include <QFontMetrics>
 #include <QFont>
 
-class BakaEngine;
+class KuroEngine;
 
 class OverlayHandler : public QObject
 {
@@ -28,7 +28,7 @@ protected slots:
     void setFont(int n);
 
 private:
-    BakaEngine *baka;
+    KuroEngine *kuro;
 
     struct overlay
     {

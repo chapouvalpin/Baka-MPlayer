@@ -9,17 +9,17 @@ namespace Ui {
 class PreferencesDialog;
 }
 
-class BakaEngine;
+class KuroEngine;
 
 class PreferencesDialog : public QDialog
 {
     Q_OBJECT
 
 public:
-    explicit PreferencesDialog(BakaEngine *baka, QWidget *parent = 0);
+    explicit PreferencesDialog(KuroEngine *kuro, QWidget *parent = 0);
     ~PreferencesDialog();
 
-    static void showPreferences(BakaEngine *baka, QWidget *parent = 0);
+    static void showPreferences(KuroEngine *kuro, QWidget *parent = 0);
 
 protected:
     void PopulateLangs();
@@ -31,7 +31,7 @@ protected:
 
 private:
     Ui::PreferencesDialog *ui;
-    BakaEngine *baka;
+    KuroEngine *kuro;
 
     QString screenshotDir;
     int numberOfShortcuts;

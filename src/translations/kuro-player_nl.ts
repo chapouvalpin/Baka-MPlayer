@@ -4,20 +4,20 @@
 <context>
     <name>AboutDialog</name>
     <message>
-        <source>About Baka MPlayer</source>
-        <translation>Over Baka MPlayer</translation>
+        <source>About Kuro Player</source>
+        <translation>Over Kuro Player</translation>
     </message>
     <message>
         <source>About</source>
         <translation>Over</translation>
     </message>
     <message>
-        <source>Baka MPlayer 0.0.0</source>
-        <translation>Baka Mplayer 0.0.0</translation>
+        <source>Kuro Player 0.0.0</source>
+        <translation>Kuro Player 0.0.0</translation>
     </message>
     <message>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;b&gt;Baka MPlayer&lt;/b&gt; is a free and open source, cross-platform, &lt;b&gt;libmpv&lt;/b&gt; based multimedia player. Its simple design reflects the idea for an uncluttered, simple, and enjoyable environment for watching tv shows.&lt;br&gt;&lt;br&gt;Copyright © 2015 godly-devotion, u8sand&lt;br&gt;&lt;br&gt;&lt;a href=&quot;https://github.com/u8sand/Baka-MPlayer&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:dodgerblue;&quot;&gt;https://github.com/u8sand/Baka-MPlayer&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;b&gt;Baka MPlayer&lt;/b&gt; is een vrij en gratis, multiplatform mediaspeler gebaseerd op &lt;b&gt;libmpv&lt;/b&gt; . Het simpele ontwerp koestert het idee voor een overzichtelijke, simpele en een aangenaame omgeving voor het kijken van TV-programma&apos;s &lt;br&gt;&lt;br&gt;Copyright © 2015 godly-devotion, u8sand&lt;br&gt;&lt;br&gt;&lt;a href=&quot;https://github.com/u8sand/Baka-MPlayer&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:dodgerblue;&quot;&gt;https://github.com/u8sand/Baka-MPlayer&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;b&gt;Kuro Player&lt;/b&gt; is a free and open source, cross-platform, &lt;b&gt;libmpv&lt;/b&gt; based multimedia player. Its simple design reflects the idea for an uncluttered, simple, and enjoyable environment for watching tv shows.&lt;br&gt;&lt;br&gt;Copyright © 2015 godly-devotion, u8sand&lt;br&gt;&lt;br&gt;&lt;a href=&quot;https://github.com/u8sand/Kuro-Player&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:dodgerblue;&quot;&gt;https://github.com/u8sand/Kuro-Player&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;b&gt;Kuro Player&lt;/b&gt; is een vrij en gratis, multiplatform mediaspeler gebaseerd op &lt;b&gt;libmpv&lt;/b&gt; . Het simpele ontwerp koestert het idee voor een overzichtelijke, simpele en een aangenaame omgeving voor het kijken van TV-programma&apos;s &lt;br&gt;&lt;br&gt;Copyright © 2015 godly-devotion, u8sand&lt;br&gt;&lt;br&gt;&lt;a href=&quot;https://github.com/u8sand/Kuro-Player&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:dodgerblue;&quot;&gt;https://github.com/u8sand/Kuro-Player&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <source>Credits</source>
@@ -86,7 +86,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA</source
     </message>
 </context>
 <context>
-    <name>BakaEngine</name>
+    <name>KuroEngine</name>
     <message>
         <source>mpv not yet initialized</source>
         <translation>mpv nog niet gestart</translation>
@@ -120,7 +120,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA</source
         <translation>Voor het dimmen van de lichten moet een desktop compositor aanstaan. Dit kan door middel van het Window Manager Desktop.</translation>
     </message>
     <message>
-        <source>http://bakamplayer.u8sand.net/help.php</source>
+        <source>http://kuro-player.u8sand.net/help.php</source>
         <translation></translation>
     </message>
     <message>
@@ -156,8 +156,8 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA</source
         <translation>Snelheid: x%0</translation>
     </message>
     <message>
-        <source>usage: baka &lt;command&gt; [...]</source>
-        <translation>Gebruik: baka &lt;commando&gt; [...]</translation>
+        <source>usage: kuro &lt;command&gt; [...]</source>
+        <translation>Gebruik: kuro &lt;commando&gt; [...]</translation>
     </message>
     <message>
         <source>commands:</source>
@@ -180,9 +180,9 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA</source
         <translation>Configuratieversie niet herkend</translation>
     </message>
     <message>
-        <source>The settings file was made by a newer version of baka-mplayer; please upgrade this version or seek assistance from the developers.
+        <source>The settings file was made by a newer version of kuro-player; please upgrade this version or seek assistance from the developers.
 Some features may not work and changed settings will not be saved.</source>
-        <translation>Het configuratiebestand was gemaakt met een nieuwe versie van baka-mplayer. Update deze versie alstublieft of zoek hulp bij de ontwikkelaars.
+        <translation>Het configuratiebestand was gemaakt met een nieuwe versie van kuro-player. Update deze versie alstublieft of zoek hulp bij de ontwikkelaars.
 Sommige functies kunnen niet werken en veranderde instellingen worden niet opgeslagen.</translation>
     </message>
     <message>
@@ -390,8 +390,8 @@ Sommige functies kunnen niet werken en veranderde instellingen worden niet opges
         <translation>voer systeem-shellcommando uit</translation>
     </message>
     <message>
-        <source>creates a new instance of baka-mplayer</source>
-        <translation>creëert een nieuwe instantie van baka-mplayer</translation>
+        <source>creates a new instance of kuro-player</source>
+        <translation>creëert een nieuwe instantie van kuro-player</translation>
     </message>
     <message>
         <source>shows the open location dialog</source>
@@ -522,8 +522,8 @@ Sommige functies kunnen niet werken en veranderde instellingen worden niet opges
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>quit baka-mplayer</source>
-        <translation>Sluit baka-mplayer</translation>
+        <source>quit kuro-player</source>
+        <translation>Sluit kuro-player</translation>
     </message>
 </context>
 <context>
@@ -637,7 +637,7 @@ Sommige functies kunnen niet werken en veranderde instellingen worden niet opges
 <context>
     <name>MainWindow</name>
     <message>
-        <source>Baka MPlayer</source>
+        <source>Kuro Player</source>
         <translation></translation>
     </message>
     <message>
@@ -861,8 +861,8 @@ Sommige functies kunnen niet werken en veranderde instellingen worden niet opges
         <translation>Over &amp;Qt</translation>
     </message>
     <message>
-        <source>About &amp;Baka MPlayer</source>
-        <translation>Over &amp;Baka MPlayer</translation>
+        <source>About &amp;Kuro Player</source>
+        <translation>Over &amp;Kuro Player</translation>
     </message>
     <message>
         <source>To &amp;Current Size</source>

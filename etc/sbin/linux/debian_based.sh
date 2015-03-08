@@ -19,13 +19,13 @@ dpkg-buildpackage -uc -us -b -j${JOBS}
 sudo dpkg -i ../mpv*.deb
 cd ..
 
-# build baka-mplayer
-git clone https://github.com/u8sand/Baka-MPlayer.git
-cd Baka-MPlayer
+# build kuro-player
+git clone https://github.com/u8sand/Kuro-Player.git
+cd Kuro-Player
 QMAKE=/usr/lib/x86_64-linux-gnu/qt5/bin/qmake ./configure CONFIG+=install_translations
 make -j${JOBS}
 #dpkg-buildpackage -uc -us -b -j${JOBS}
-# install baka-mplayer
+# install kuro-player
 sudo make install
-#sudo dpkg -i ../baka-mplayer*.deb
+#sudo dpkg -i ../kuro-player*.deb
 cd ..

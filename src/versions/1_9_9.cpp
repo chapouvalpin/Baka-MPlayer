@@ -1,4 +1,4 @@
-#include "bakaengine.h"
+#include "kuroengine.h"
 
 #include "ui/mainwindow.h"
 #include "ui_mainwindow.h"
@@ -8,13 +8,13 @@
 
 #include <QDir>
 
-void BakaEngine::Load1_9_9()
+void KuroEngine::Load1_9_9()
 {
-    LoadBaka1_9_9();
+    LoadKuro1_9_9();
     LoadMpv1_9_9();
 }
 
-void BakaEngine::LoadBaka1_9_9()
+void KuroEngine::LoadKuro1_9_9()
 {
     settings->beginGroup("window");
     window->setOnTop(settings->value("onTop", "never"));
@@ -40,7 +40,7 @@ void BakaEngine::LoadBaka1_9_9()
     window->UpdateRecentFiles();
 }
 
-void BakaEngine::LoadMpv1_9_9()
+void KuroEngine::LoadMpv1_9_9()
 {
     settings->beginGroup("mpv");
     mpv->ScreenshotFormat(settings->value("screenshotFormat", "jpg"));

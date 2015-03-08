@@ -5,7 +5,7 @@
 #include <QElapsedTimer>
 #include <QPoint>
 
-class BakaEngine;
+class KuroEngine;
 
 class GestureHandler : public QObject
 {
@@ -31,7 +31,7 @@ public slots:
     bool End();
 
 private:
-    BakaEngine *baka;
+    KuroEngine *kuro;
 
     QElapsedTimer *elapsedTimer;
 

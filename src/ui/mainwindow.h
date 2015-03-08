@@ -22,12 +22,12 @@ namespace Ui {
 class MainWindow;
 }
 
-class BakaEngine;
+class KuroEngine;
 class MpvHandler;
 
 class MainWindow : public QMainWindow
 {
-friend class BakaEngine;
+friend class KuroEngine;
     Q_OBJECT
 public:
     explicit MainWindow(QWidget *parent = 0);
@@ -74,7 +74,7 @@ private slots:
     void SetPreviousButtonEnabled(bool enable);
 
 private:
-    BakaEngine      *baka;
+    KuroEngine      *kuro;
     MpvHandler      *mpv;
 
 #if defined(Q_OS_WIN)

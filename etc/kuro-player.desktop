@@ -1,0 +1,13 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=Kuro-Player
+Name[hr]=Kuro Player
+GenericName=Media player
+GenericName[hr]=Medijski reproduktor
+Comment=Kuro Player is a free and open source, cross-platform, **libmpv** based multimedia player.
+Comment[hr]=Kuro Player je slobodan i otvorenog kôda, višeplatformski, **libmpv** temeljen reproduktor.
+Icon=kuro-player
+Exec=kuro-player %u
+Terminal=false
+Categories=AudioVideo;Video;

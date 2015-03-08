@@ -1,4 +1,4 @@
-#include "bakaengine.h"
+#include "kuroengine.h"
 
 #include <QMessageBox>
 #include <QDir>
@@ -14,7 +14,7 @@
 #include "util.h"
 
 
-BakaEngine::BakaEngine(QObject *parent):
+KuroEngine::KuroEngine(QObject *parent):
     QObject(parent),
     window(static_cast<MainWindow*>(parent)),
     mpv(new MpvHandler(window->ui->mpvFrame->winId(), this)),
@@ -49,7 +49,7 @@ BakaEngine::BakaEngine(QObject *parent):
             });
 }
 
-BakaEngine::~BakaEngine()
+KuroEngine::~KuroEngine()
 {
     if(translator != nullptr)
         delete translator;
@@ -64,7 +64,7 @@ BakaEngine::~BakaEngine()
     delete settings;
 }
 
-void BakaEngine::LoadSettings()
+void KuroEngine::LoadSettings()
 {
     if(settings == nullptr)
         return;
@@ -87,7 +87,7 @@ void BakaEngine::LoadSettings()
     }
     else
     {
-        settings->beginGroup("baka-mplayer");
+        settings->beginGroup("kuro-player");
         version = settings->value("version", "1.9.9"); // defaults to the first version without version info in settings
         settings->endGroup();
     }
@@ -100,18 +100,18 @@ void BakaEngine::LoadSettings()
     {
         Load2_0_2();
         window->ui->action_Preferences->setEnabled(false);
-        QMessageBox::information(window, tr("Settings version not recognized"), tr("The settings file was made by a newer version of baka-mplayer; please upgrade this version or seek assistance from the developers.\nSome features may not work and changed settings will not be saved."));
+        QMessageBox::information(window, tr("Settings version not recognized"), tr("The settings file was made by a newer version of kuro-player; please upgrade this version or seek assistance from the developers.\nSome features may not work and changed settings will not be saved."));
         delete settings;
         settings = nullptr;
     }
 }
 
-void BakaEngine::SaveSettings()
+void KuroEngine::SaveSettings()
 {
     if(settings == nullptr)
         return;
 
-    settings->beginGroup("baka-mplayer");
+    settings->beginGroup("kuro-player");
     settings->setValue("onTop", window->onTop);
     settings->setValueInt("autoFit", window->autoFit);
     settings->setValueBool("trayIcon", sysTrayIcon->isVisible());
@@ -166,20 +166,20 @@ void BakaEngine::SaveSettings()
     settings->Save();
 }
 
-void BakaEngine::Command(QString command)
+void KuroEngine::Command(QString command)
 {
     if(command == QString())
         return;
     QStringList args = command.split(" ");
     if(!args.empty())
     {
-        if(args.front() == "baka") // implicitly understood
+        if(args.front() == "kuro") // implicitly understood
             args.pop_front();
 
         if(!args.empty())
         {
-            auto iter = BakaCommandMap.find(args.front());
-            if(iter != BakaCommandMap.end())
+            auto iter = KuroCommandMap.find(args.front());
+            if(iter != KuroCommandMap.end())
             {
                 args.pop_front();
                 (this->*(iter->first))(args); // execute command
@@ -188,29 +188,29 @@ void BakaEngine::Command(QString command)
                 InvalidCommand(args.join(' '));
         }
         else
-            RequiresParameters("baka");
+            RequiresParameters("kuro");
     }
     else
         InvalidCommand(args.join(' '));
 }
 
-void BakaEngine::Print(QString what, QString who)
+void KuroEngine::Print(QString what, QString who)
 {
     window->ui->outputTextEdit->moveCursor(QTextCursor::End);
     window->ui->outputTextEdit->insertPlainText(QString("[%0]: %1\n").arg(who, what));
 }
 
-void BakaEngine::InvalidCommand(QString command)
+void KuroEngine::InvalidCommand(QString command)
 {
     Print(tr("invalid command '%0'").arg(command));
 }
 
-void BakaEngine::InvalidParameter(QString parameter)
+void KuroEngine::InvalidParameter(QString parameter)
 {
     Print(tr("invalid parameter '%0'").arg(parameter));
 }
 
-void BakaEngine::RequiresParameters(QString what)
+void KuroEngine::RequiresParameters(QString what)
 {
     Print(tr("'%0' requires parameters").arg(what));
 }

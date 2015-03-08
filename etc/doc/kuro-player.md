@@ -1,8 +1,8 @@
-﻿# Baka MPlayer User Manual
+﻿# Kuro Player User Manual
 
 ## Introduction
 
-Baka MPlayer is a free and open source, cross-platform, **libmpv** based multimedia player.
+Kuro Player is a free and open source, cross-platform, **libmpv** based multimedia player.
 Its simple design reflects the idea for an uncluttered, simple, and enjoyable environment for watching tv shows.
 
 ## Features
@@ -20,11 +20,11 @@ Gesture support can be disabled under Preferences if desired.
 
 ### Screenshots
 
-The screenshot template is passed into mpv as `screenshot-template` (see mpv's manual for more info). If the screenshot dialog is hidden by unchecking the `Always show this dialog` option, the dialog can be restored by setting `baka-mplayer/screenshotDialog` to true in the settings file.
+The screenshot template is passed into mpv as `screenshot-template` (see mpv's manual for more info). If the screenshot dialog is hidden by unchecking the `Always show this dialog` option, the dialog can be restored by setting `kuro-player/screenshotDialog` to true in the settings file.
 
 ### Recent Files
 
-Your recently viewed files are stored in settings for easy access. It is located at the bottom of the file under `[baka-mplayer] -> recent`. To store more recently viewed files, set the `[baka-mplayer] -> maxRecent` value and the list will trim itself accordingly.
+Your recently viewed files are stored in settings for easy access. It is located at the bottom of the file under `[kuro-player] -> recent`. To store more recently viewed files, set the `[kuro-player] -> maxRecent` value and the list will trim itself accordingly.
 
 
 ## Special functions
@@ -54,13 +54,13 @@ Most of these features are customizable through preferences, including key-bindi
 
 ## Settings
 
-On Windows, the config files are saved with the executable in an ini file `bakamplayer.ini`.
-On Linux, they are saved in the Qt location `~/.config/bakamplayer.ini`.
+On Windows, the config files are saved with the executable in an ini file `kuro-player.ini`.
+On Linux, they are saved in the Qt location `~/.config/kuro-player.ini`.
 
 	# Format: [category] key=value
 	# Below are the keys and comments specify setting details
 	
-	[baka-mplayer]          # program options
+	[kuro-player]          # program options
 	autoFit=                # autoFit percentage (0 = no autofit)
 	debug=                  # debugging enabled (output box)
 	hidePopup=              # hide tray icon notifications
@@ -77,7 +77,7 @@ On Linux, they are saved in the Qt location `~/.config/bakamplayer.ini`.
 	version=                # the settings version (do not modify)
 
 	[input]                 # input macros
-	Ctrl+Q=baka quit # Quit # Shortcut=Command # Label
+	Ctrl+Q=kuro quit # Quit # Shortcut=Command # Label
 	                        # for command information see Commands section
 
 	[mpv]                   # mpv specific options
@@ -92,15 +92,15 @@ Note that the `[mpv]` section is using mpv's options. See mpv's manual for a lis
 
 ## Commands
 
-The command-line is handled on an argument basis by splitting commands up by spaces and getting more and more specific. The major command differentiation is between mpv and baka-mplayer.
+The command-line is handled on an argument basis by splitting commands up by spaces and getting more and more specific. The major command differentiation is between mpv and kuro-player.
 
-Baka-MPlayer commands should be prefixed with `baka` while mpv commands are prefixed with `mpv`. eg. `baka quit` vs `mpv quit`  Both will quit but one told mpv to quit (which then ended baka), while the other told baka to quit (which ended mpv).
+Kuro-Player commands should be prefixed with `kuro` while mpv commands are prefixed with `mpv`. eg. `kuro quit` vs `mpv quit`  Both will quit but one told mpv to quit (which then ended kuro), while the other told kuro to quit (which ended mpv).
 
-In general you'll want to use any available baka-mplayer command before you use an mpv command; this is because some aspects either are baka-mplayer specific or handle certain issues. For example: `baka volume +5` vs `mpv volume +5`; baka-mplayer will adjust the volume even if no video is playing and update mpv accordingly when it starts up; mpv volume will only work if a file is playing.
+In general you'll want to use any available kuro-player command before you use an mpv command; this is because some aspects either are kuro-player specific or handle certain issues. For example: `kuro volume +5` vs `mpv volume +5`; kuro-player will adjust the volume even if no video is playing and update mpv accordingly when it starts up; mpv volume will only work if a file is playing.
 
-The following is a list of the available `baka` commands (for `mpv` commands see mpv's manual):
+The following is a list of the available `kuro` commands (for `mpv` commands see mpv's manual):
 
-	new                             # creates a new instance of baka-mplayer
+	new                             # creates a new instance of kuro-player
 	open_location                   # shows the open location dialog
 	open_clipboard                  # opens the clipboard
 	show_in_folder                  # shows the current file in folder
@@ -131,7 +131,7 @@ The following is a list of the available `baka` commands (for `mpv` commands see
 	help [command]                  # internal help menu
 	about [qt]                      # open about dialog
 	debug                           # toggle mpv debugging messages
-	quit                            # quit baka-mplayer
+	quit                            # quit kuro-player
 
 More commands will be coming but please feel free to suggest modifications or additions.
 
@@ -142,7 +142,7 @@ More commands will be coming but please feel free to suggest modifications or ad
 
 1. Update your local repo to make sure everything is up to date.
 2. Open `src/translations.pri` with your favorite text editor.
-3. Add a new line that says `translations/baka-mplayer_{lang-code}.ts` in the format that exists (all lines except the last require a `\`).
+3. Add a new line that says `translations/kuro-player_{lang-code}.ts` in the format that exists (all lines except the last require a `\`).
 4. Run `./configure CONFIG+=begin_translations` to prepare your translation file.
 5. Go to `src/translations/` and you will now find your language's `.ts` file.
 6. Open the `.ts` file with Qt Linguist and proceed to translate into your language.

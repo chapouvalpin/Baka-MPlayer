@@ -4,20 +4,20 @@
 <context>
     <name>AboutDialog</name>
     <message>
-        <source>About Baka MPlayer</source>
-        <translation>关于 Baka MPlayer</translation>
+        <source>About Kuro Player</source>
+        <translation>关于 Kuro Player</translation>
     </message>
     <message>
         <source>About</source>
         <translation>关于</translation>
     </message>
     <message>
-        <source>Baka MPlayer 0.0.0</source>
-        <translation>Baka MPlayer 0.0.0</translation>
+        <source>Kuro Player 0.0.0</source>
+        <translation>Kuro Player 0.0.0</translation>
     </message>
     <message>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;b&gt;Baka MPlayer&lt;/b&gt; is a free and open source, cross-platform, &lt;b&gt;libmpv&lt;/b&gt; based multimedia player. Its simple design reflects the idea for an uncluttered, simple, and enjoyable environment for watching tv shows.&lt;br&gt;&lt;br&gt;Copyright © 2014 godly-devotion, u8sand&lt;br&gt;&lt;br&gt;&lt;a href=&quot;https://github.com/u8sand/Baka-MPlayer&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:dodgerblue;&quot;&gt;https://github.com/u8sand/Baka-MPlayer&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="vanished">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;b&gt;Baka MPlayer&lt;/b&gt; 是一个基于 &lt;b&gt;libmpv&lt;/b&gt; 的自由开源跨平台的多媒体播放器。简单的设计致力于为观看视频提供一个整洁，简单，愉快的环境。&lt;br&gt;&lt;br&gt;Copyright © 2014 godly-devotion, u8sand&lt;br&gt;&lt;br&gt;&lt;a href=&quot;https://github.com/u8sand/Baka-MPlayer&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:dodgerblue;&quot;&gt;https://github.com/u8sand/Baka-MPlayer&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;b&gt;Kuro Player&lt;/b&gt; is a free and open source, cross-platform, &lt;b&gt;libmpv&lt;/b&gt; based multimedia player. Its simple design reflects the idea for an uncluttered, simple, and enjoyable environment for watching tv shows.&lt;br&gt;&lt;br&gt;Copyright © 2014 godly-devotion, u8sand&lt;br&gt;&lt;br&gt;&lt;a href=&quot;https://github.com/u8sand/Kuro-Player&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:dodgerblue;&quot;&gt;https://github.com/u8sand/Kuro-Player&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="vanished">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;b&gt;Kuro Player&lt;/b&gt; 是一个基于 &lt;b&gt;libmpv&lt;/b&gt; 的自由开源跨平台的多媒体播放器。简单的设计致力于为观看视频提供一个整洁，简单，愉快的环境。&lt;br&gt;&lt;br&gt;Copyright © 2014 godly-devotion, u8sand&lt;br&gt;&lt;br&gt;&lt;a href=&quot;https://github.com/u8sand/Kuro-Player&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:dodgerblue;&quot;&gt;https://github.com/u8sand/Kuro-Player&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <source>Credits</source>
@@ -66,8 +66,8 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA</transl
         <translation>关闭(&amp;C)</translation>
     </message>
     <message>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;b&gt;Baka MPlayer&lt;/b&gt; is a free and open source, cross-platform, &lt;b&gt;libmpv&lt;/b&gt; based multimedia player. Its simple design reflects the idea for an uncluttered, simple, and enjoyable environment for watching tv shows.&lt;br&gt;&lt;br&gt;Copyright © 2015 godly-devotion, u8sand&lt;br&gt;&lt;br&gt;&lt;a href=&quot;https://github.com/u8sand/Baka-MPlayer&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:dodgerblue;&quot;&gt;https://github.com/u8sand/Baka-MPlayer&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;b&gt;Baka MPlayer&lt;/b&gt; 是一个基于 &lt;b&gt;libmpv&lt;/b&gt; 的自由开源跨平台的多媒体播放器。简单的设计致力于为观看视频提供一个整洁，简单，愉快的环境。&lt;br&gt;&lt;br&gt;Copyright © 2014 godly-devotion, u8sand&lt;br&gt;&lt;br&gt;&lt;a href=&quot;https://github.com/u8sand/Baka-MPlayer&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:dodgerblue;&quot;&gt;https://github.com/u8sand/Baka-MPlayer&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;b&gt;Kuro Player&lt;/b&gt; is a free and open source, cross-platform, &lt;b&gt;libmpv&lt;/b&gt; based multimedia player. Its simple design reflects the idea for an uncluttered, simple, and enjoyable environment for watching tv shows.&lt;br&gt;&lt;br&gt;Copyright © 2015 godly-devotion, u8sand&lt;br&gt;&lt;br&gt;&lt;a href=&quot;https://github.com/u8sand/Kuro-Player&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:dodgerblue;&quot;&gt;https://github.com/u8sand/Kuro-Player&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;b&gt;Kuro Player&lt;/b&gt; 是一个基于 &lt;b&gt;libmpv&lt;/b&gt; 的自由开源跨平台的多媒体播放器。简单的设计致力于为观看视频提供一个整洁，简单，愉快的环境。&lt;br&gt;&lt;br&gt;Copyright © 2014 godly-devotion, u8sand&lt;br&gt;&lt;br&gt;&lt;a href=&quot;https://github.com/u8sand/Kuro-Player&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:dodgerblue;&quot;&gt;https://github.com/u8sand/Kuro-Player&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <source>mpv - video player based on MPlayer/mplayer2
@@ -91,15 +91,15 @@ Translations
     </message>
 </context>
 <context>
-    <name>BakaEngine</name>
+    <name>KuroEngine</name>
     <message>
         <source>Settings version not recognized</source>
         <translation>配置文件版本无法被识别</translation>
     </message>
     <message>
-        <source>The settings file was made by a newer version of baka-mplayer; please upgrade this version or seek assistance from the developers.
+        <source>The settings file was made by a newer version of kuro-player; please upgrade this version or seek assistance from the developers.
 Some features may not work and changed settings will not be saved.</source>
-        <translation>配置文件是由更新版本的baka-mplayer创建的，请更新此版本或者向开发者寻求帮助
+        <translation>配置文件是由更新版本的kuro-player创建的，请更新此版本或者向开发者寻求帮助
 一些特性可能无法工作且更改的设置无法被保存</translation>
     </message>
     <message>
@@ -161,8 +161,8 @@ Some features may not work and changed settings will not be saved.</source>
         <translation>字幕文件</translation>
     </message>
     <message>
-        <source>http://bakamplayer.u8sand.net/help.php</source>
-        <translation>http://bakamplayer.u8sand.net/help.php</translation>
+        <source>http://kuro-player.u8sand.net/help.php</source>
+        <translation>http://kuro-player.u8sand.net/help.php</translation>
     </message>
     <message>
         <source>Dim Lights</source>
@@ -497,16 +497,16 @@ Some features may not work and changed settings will not be saved.</source>
         <translation type="vanished">播放上一个视频</translation>
     </message>
     <message>
-        <source>Create a new Baka-MPlayer window</source>
-        <translation type="vanished">打开新的Baka-MPlayer窗口</translation>
+        <source>Create a new Kuro-Player window</source>
+        <translation type="vanished">打开新的Kuro-Player窗口</translation>
     </message>
     <message>
         <source>Open a file Dialog</source>
         <translation type="vanished">打开文件对话框</translation>
     </message>
     <message>
-        <source>Quit the Baka-MPlayer</source>
-        <translation type="vanished">离开Baka-MPlayer</translation>
+        <source>Quit the Kuro-Player</source>
+        <translation type="vanished">离开Kuro-Player</translation>
     </message>
     <message>
         <source>Play the Next Video</source>
@@ -533,8 +533,8 @@ Some features may not work and changed settings will not be saved.</source>
         <translation type="vanished">打开上一个文件</translation>
     </message>
     <message>
-        <source>Access Baka-MPlayer Command-line</source>
-        <translation type="vanished">Baka-MPlayer命令行</translation>
+        <source>Access Kuro-Player Command-line</source>
+        <translation type="vanished">Kuro-Player命令行</translation>
     </message>
     <message>
         <source>Launch Online Help</source>
@@ -569,8 +569,8 @@ Some features may not work and changed settings will not be saved.</source>
         <translation type="vanished">适应窗口尺寸到原始大小的200%</translation>
     </message>
     <message>
-        <source>Hide Baka-MPlayer from Your Boss</source>
-        <translation type="vanished">不让你的老板发现Baka-MPlayer</translation>
+        <source>Hide Kuro-Player from Your Boss</source>
+        <translation type="vanished">不让你的老板发现Kuro-Player</translation>
     </message>
     <message>
         <source>Select the Previous Item on the Playlist</source>
@@ -617,8 +617,8 @@ Some features may not work and changed settings will not be saved.</source>
         <translation>速度: %0x</translation>
     </message>
     <message>
-        <source>usage: baka &lt;command&gt; [...]</source>
-        <translation>用法: baka &lt;command&gt; [...]</translation>
+        <source>usage: kuro &lt;command&gt; [...]</source>
+        <translation>用法: kuro &lt;command&gt; [...]</translation>
     </message>
     <message>
         <source>commands:</source>
@@ -657,8 +657,8 @@ Some features may not work and changed settings will not be saved.</source>
         <translation>执行系统shell命令</translation>
     </message>
     <message>
-        <source>creates a new instance of baka-mplayer</source>
-        <translation>打开一个新的baka-mplayer实例</translation>
+        <source>creates a new instance of kuro-player</source>
+        <translation>打开一个新的kuro-player实例</translation>
     </message>
     <message>
         <source>shows the open location dialog</source>
@@ -789,8 +789,8 @@ Some features may not work and changed settings will not be saved.</source>
         <translation>设置mpv调试级别</translation>
     </message>
     <message>
-        <source>quit baka-mplayer</source>
-        <translation>退出baka-mplayer</translation>
+        <source>quit kuro-player</source>
+        <translation>退出kuro-player</translation>
     </message>
 </context>
 <context>
@@ -995,8 +995,8 @@ Some features may not work and changed settings will not be saved.</source>
 <context>
     <name>MainWindow</name>
     <message>
-        <source>Baka MPlayer</source>
-        <translation>Baka MPlayer</translation>
+        <source>Kuro Player</source>
+        <translation>Kuro Player</translation>
     </message>
     <message>
         <source>&gt;</source>
@@ -1323,8 +1323,8 @@ Some features may not work and changed settings will not be saved.</source>
         <translation>关于Qt(&amp;Q)</translation>
     </message>
     <message>
-        <source>About &amp;Baka MPlayer</source>
-        <translation>关于 Baka MPlayer (&amp;B)</translation>
+        <source>About &amp;Kuro Player</source>
+        <translation>关于 Kuro Player (&amp;B)</translation>
     </message>
     <message>
         <source>To &amp;Current Size</source>
@@ -1553,17 +1553,17 @@ Note: Value must be from %0 - %1</source>
         <translation type="vanished">打开字幕文件</translation>
     </message>
     <message>
-        <source>http://bakamplayer.u8sand.net/help.php</source>
-        <translation type="vanished">http://bakamplayer.u8sand.net/help.php</translation>
+        <source>http://kuro-player.u8sand.net/help.php</source>
+        <translation type="vanished">http://kuro-player.u8sand.net/help.php</translation>
     </message>
     <message>
         <source>Settings version not recognized</source>
         <translation type="obsolete">配置文件版本无法被识别</translation>
     </message>
     <message>
-        <source>The settings file was made by a newer version of baka-mplayer; please upgrade this version or seek assistance from the developers.
+        <source>The settings file was made by a newer version of kuro-player; please upgrade this version or seek assistance from the developers.
 Some features may not work and changed settings will not be saved.</source>
-        <translation type="obsolete">配置文件是由更新版本的baka-mplayer创建的，请更新此版本或者向开发者寻求帮助
+        <translation type="obsolete">配置文件是由更新版本的kuro-player创建的，请更新此版本或者向开发者寻求帮助
 一些特性可能无法工作且更改的设置无法被保存</translation>
     </message>
     <message>

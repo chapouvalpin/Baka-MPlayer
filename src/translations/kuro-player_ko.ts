@@ -5,8 +5,8 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../ui/aboutdialog.ui" line="14"/>
-        <source>About Baka MPlayer</source>
-        <translation>Baka MPlayer 정보</translation>
+        <source>About Kuro Player</source>
+        <translation>Kuro Player 정보</translation>
     </message>
     <message>
         <location filename="../ui/aboutdialog.ui" line="116"/>
@@ -15,12 +15,12 @@
     </message>
     <message>
         <location filename="../ui/aboutdialog.ui" line="169"/>
-        <source>Baka MPlayer 0.0.0</source>
-        <translation>Baka MPlayer 0.0.0</translation>
+        <source>Kuro Player 0.0.0</source>
+        <translation>Kuro Player 0.0.0</translation>
     </message>
     <message>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;b&gt;Baka MPlayer&lt;/b&gt; is a free and open source, cross-platform, &lt;b&gt;libmpv&lt;/b&gt; based multimedia player. Its simple design reflects the idea for an uncluttered, simple, and enjoyable environment for watching tv shows.&lt;br&gt;&lt;br&gt;Copyright © 2014 godly-devotion, u8sand&lt;br&gt;&lt;br&gt;&lt;a href=&quot;https://github.com/u8sand/Baka-MPlayer&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:dodgerblue;&quot;&gt;https://github.com/u8sand/Baka-MPlayer&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="vanished">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;b&gt;Baka MPlayer&lt;/b&gt; is a free and open source, cross-platform, &lt;b&gt;libmpv&lt;/b&gt; based multimedia player. Its simple design reflects the idea for an uncluttered, simple, and enjoyable environment for watching tv shows.&lt;br&gt;&lt;br&gt;Copyright © 2014 godly-devotion, u8sand&lt;br&gt;&lt;br&gt;&lt;a href=&quot;https://github.com/u8sand/Baka-MPlayer&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:dodgerblue;&quot;&gt;https://github.com/u8sand/Baka-MPlayer&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;b&gt;Kuro Player&lt;/b&gt; is a free and open source, cross-platform, &lt;b&gt;libmpv&lt;/b&gt; based multimedia player. Its simple design reflects the idea for an uncluttered, simple, and enjoyable environment for watching tv shows.&lt;br&gt;&lt;br&gt;Copyright © 2014 godly-devotion, u8sand&lt;br&gt;&lt;br&gt;&lt;a href=&quot;https://github.com/u8sand/Kuro-Player&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:dodgerblue;&quot;&gt;https://github.com/u8sand/Kuro-Player&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="vanished">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;b&gt;Kuro Player&lt;/b&gt; is a free and open source, cross-platform, &lt;b&gt;libmpv&lt;/b&gt; based multimedia player. Its simple design reflects the idea for an uncluttered, simple, and enjoyable environment for watching tv shows.&lt;br&gt;&lt;br&gt;Copyright © 2014 godly-devotion, u8sand&lt;br&gt;&lt;br&gt;&lt;a href=&quot;https://github.com/u8sand/Kuro-Player&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:dodgerblue;&quot;&gt;https://github.com/u8sand/Kuro-Player&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../ui/aboutdialog.ui" line="193"/>
@@ -137,37 +137,37 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA</transl
     </message>
     <message>
         <location filename="../ui/aboutdialog.ui" line="179"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;b&gt;Baka MPlayer&lt;/b&gt; is a free and open source, cross-platform, &lt;b&gt;libmpv&lt;/b&gt; based multimedia player. Its simple design reflects the idea for an uncluttered, simple, and enjoyable environment for watching tv shows.&lt;br&gt;&lt;br&gt;Copyright © 2015 godly-devotion, u8sand&lt;br&gt;&lt;br&gt;&lt;a href=&quot;https://github.com/u8sand/Baka-MPlayer&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:dodgerblue;&quot;&gt;https://github.com/u8sand/Baka-MPlayer&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;b&gt;Baka MPlayer&lt;/b&gt; is a free and open source, cross-platform, &lt;b&gt;libmpv&lt;/b&gt; based multimedia player. Its simple design reflects the idea for an uncluttered, simple, and enjoyable environment for watching tv shows.&lt;br&gt;&lt;br&gt;Copyright © 2015 godly-devotion, u8sand&lt;br&gt;&lt;br&gt;&lt;a href=&quot;https://github.com/u8sand/Baka-MPlayer&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:dodgerblue;&quot;&gt;https://github.com/u8sand/Baka-MPlayer&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;b&gt;Kuro Player&lt;/b&gt; is a free and open source, cross-platform, &lt;b&gt;libmpv&lt;/b&gt; based multimedia player. Its simple design reflects the idea for an uncluttered, simple, and enjoyable environment for watching tv shows.&lt;br&gt;&lt;br&gt;Copyright © 2015 godly-devotion, u8sand&lt;br&gt;&lt;br&gt;&lt;a href=&quot;https://github.com/u8sand/Kuro-Player&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:dodgerblue;&quot;&gt;https://github.com/u8sand/Kuro-Player&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;b&gt;Kuro Player&lt;/b&gt; is a free and open source, cross-platform, &lt;b&gt;libmpv&lt;/b&gt; based multimedia player. Its simple design reflects the idea for an uncluttered, simple, and enjoyable environment for watching tv shows.&lt;br&gt;&lt;br&gt;Copyright © 2015 godly-devotion, u8sand&lt;br&gt;&lt;br&gt;&lt;a href=&quot;https://github.com/u8sand/Kuro-Player&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:dodgerblue;&quot;&gt;https://github.com/u8sand/Kuro-Player&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
 </context>
 <context>
-    <name>BakaEngine</name>
+    <name>KuroEngine</name>
     <message>
-        <location filename="../bakaengine.cpp" line="97"/>
+        <location filename="../kuroengine.cpp" line="97"/>
         <source>Settings version not recognized</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../bakaengine.cpp" line="97"/>
-        <source>The settings file was made by a newer version of baka-mplayer; please upgrade this version or seek assistance from the developers.
+        <location filename="../kuroengine.cpp" line="97"/>
+        <source>The settings file was made by a newer version of kuro-player; please upgrade this version or seek assistance from the developers.
 Some features may not work and changed settings will not be saved.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../bakaengine.cpp" line="232"/>
+        <location filename="../kuroengine.cpp" line="232"/>
         <source>invalid command &apos;%0&apos;
 </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../bakaengine.cpp" line="237"/>
+        <location filename="../kuroengine.cpp" line="237"/>
         <source>invalid parameter &apos;%0&apos;
 </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../bakaengine.cpp" line="242"/>
+        <location filename="../kuroengine.cpp" line="242"/>
         <source>&apos;%0&apos;&apos; requires parameters
 </source>
         <translation type="unfinished"></translation>
@@ -177,297 +177,297 @@ Some features may not work and changed settings will not be saved.</source>
         <translation type="obsolete">screenshot%#04n</translation>
     </message>
     <message>
-        <location filename="../bakacommands.cpp" line="74"/>
+        <location filename="../kurocommands.cpp" line="74"/>
         <source>Open Subtitle File</source>
         <translation>자막 파일 열기</translation>
     </message>
     <message>
-        <location filename="../bakacommands.cpp" line="75"/>
+        <location filename="../kurocommands.cpp" line="75"/>
         <source>Subtitle Files</source>
         <translation>자막 파일</translation>
     </message>
     <message>
-        <location filename="../bakacommands.cpp" line="307"/>
-        <source>http://bakamplayer.u8sand.net/help.php</source>
-        <translation>http://bakamplayer.u8sand.net/help.php</translation>
+        <location filename="../kurocommands.cpp" line="307"/>
+        <source>http://kuro-player.u8sand.net/help.php</source>
+        <translation>http://kuro-player.u8sand.net/help.php</translation>
     </message>
     <message>
-        <location filename="../bakacommands.cpp" line="340"/>
+        <location filename="../kurocommands.cpp" line="340"/>
         <source>Open File</source>
         <translation>파일 열기</translation>
     </message>
     <message>
-        <location filename="../bakacommands.cpp" line="341"/>
+        <location filename="../kurocommands.cpp" line="341"/>
         <source>Media Files</source>
         <translation>미디어 파일</translation>
     </message>
     <message>
-        <location filename="../bakacommands.cpp" line="342"/>
+        <location filename="../kurocommands.cpp" line="342"/>
         <source>Video Files</source>
         <translation>비디오 파일</translation>
     </message>
     <message>
-        <location filename="../bakacommands.cpp" line="343"/>
+        <location filename="../kurocommands.cpp" line="343"/>
         <source>Audio Files</source>
         <translation>오디오 파일</translation>
     </message>
     <message>
-        <location filename="../bakacommands.cpp" line="462"/>
+        <location filename="../kurocommands.cpp" line="462"/>
         <source>Fit Window: %0</source>
         <translation>창 크기: %0</translation>
     </message>
     <message>
-        <location filename="../bakacommands.cpp" line="462"/>
+        <location filename="../kurocommands.cpp" line="462"/>
         <source>autofit</source>
         <translation>자동</translation>
     </message>
     <message>
-        <location filename="../bakacommands.cpp" line="279"/>
+        <location filename="../kurocommands.cpp" line="279"/>
         <source>Dim Lights</source>
         <translation>불 끄기</translation>
     </message>
     <message>
-        <location filename="../bakacommands.cpp" line="279"/>
+        <location filename="../kurocommands.cpp" line="279"/>
         <source>In order to dim the lights, the desktop compositor has to be enabled. This can be done through Window Manager Desktop.</source>
         <translation>불 끄기 기는은 Desktop Compositor가 필요합니다. Window Manager Desktop을 통에서 키실수 있습니다.</translation>
     </message>
     <message>
-        <location filename="../bakaengine.h" line="48"/>
+        <location filename="../kuroengine.h" line="48"/>
         <source>Increase sub size</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../bakaengine.h" line="49"/>
+        <location filename="../kuroengine.h" line="49"/>
         <source>Decrease sub size</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../bakaengine.h" line="54"/>
+        <location filename="../kuroengine.h" line="54"/>
         <source>Restart playback</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../bakaengine.h" line="50"/>
+        <location filename="../kuroengine.h" line="50"/>
         <source>Reset speed</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../bakaengine.h" line="62"/>
+        <location filename="../kuroengine.h" line="62"/>
         <source>Take screenshot without subtitles</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../bakaengine.h" line="61"/>
+        <location filename="../kuroengine.h" line="61"/>
         <source>Take screenshot with subtitles</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../bakaengine.h" line="53"/>
+        <location filename="../kuroengine.h" line="53"/>
         <source>Toggle subtitle visibility</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../bakaengine.h" line="58"/>
+        <location filename="../kuroengine.h" line="58"/>
         <source>Seek backwards by 5 sec</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../bakaengine.h" line="56"/>
+        <location filename="../kuroengine.h" line="56"/>
         <source>Go to previous chapter</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../bakaengine.h" line="51"/>
+        <location filename="../kuroengine.h" line="51"/>
         <source>Increase playback speed by 25%</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../bakaengine.h" line="52"/>
+        <location filename="../kuroengine.h" line="52"/>
         <source>Decrease playback speed by 25%</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../bakaengine.h" line="55"/>
+        <location filename="../kuroengine.h" line="55"/>
         <source>Go to next chapter</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../bakaengine.h" line="57"/>
+        <location filename="../kuroengine.h" line="57"/>
         <source>Seek forwards by 5 sec</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../bakaengine.h" line="59"/>
+        <location filename="../kuroengine.h" line="59"/>
         <source>Frame step backwards</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../bakaengine.h" line="60"/>
+        <location filename="../kuroengine.h" line="60"/>
         <source>Frame step</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../bakaengine.h" line="63"/>
+        <location filename="../kuroengine.h" line="63"/>
         <source>Decrease volume</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../bakaengine.h" line="64"/>
+        <location filename="../kuroengine.h" line="64"/>
         <source>Increase volume</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../bakaengine.h" line="65"/>
+        <location filename="../kuroengine.h" line="65"/>
         <source>Toggle fullscreen</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../bakaengine.h" line="66"/>
+        <location filename="../kuroengine.h" line="66"/>
         <source>Dim lights</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../bakaengine.h" line="67"/>
+        <location filename="../kuroengine.h" line="67"/>
         <source>Show the file in its folder</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../bakaengine.h" line="68"/>
+        <location filename="../kuroengine.h" line="68"/>
         <source>View media information</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../bakaengine.h" line="69"/>
+        <location filename="../kuroengine.h" line="69"/>
         <source>Show jump to time dialog</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../bakaengine.h" line="71"/>
+        <location filename="../kuroengine.h" line="71"/>
         <source>Show open file dialog</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../bakaengine.h" line="76"/>
+        <location filename="../kuroengine.h" line="76"/>
         <source>Show location dialog</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../bakaengine.h" line="78"/>
+        <location filename="../kuroengine.h" line="78"/>
         <source>Toggle playlist visibility</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../bakaengine.h" line="83"/>
+        <location filename="../kuroengine.h" line="83"/>
         <source>Fit the window to the video</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../bakaengine.h" line="84"/>
+        <location filename="../kuroengine.h" line="84"/>
         <source>Fit window to 50%</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../bakaengine.h" line="85"/>
+        <location filename="../kuroengine.h" line="85"/>
         <source>Fit window to 75%</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../bakaengine.h" line="86"/>
+        <location filename="../kuroengine.h" line="86"/>
         <source>Fit window to 100%</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../bakaengine.h" line="87"/>
+        <location filename="../kuroengine.h" line="87"/>
         <source>Fit window to 150%</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../bakaengine.h" line="88"/>
+        <location filename="../kuroengine.h" line="88"/>
         <source>Fit window to 200%</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../bakaengine.h" line="89"/>
+        <location filename="../kuroengine.h" line="89"/>
         <source>Boss key</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../bakaengine.h" line="74"/>
+        <location filename="../kuroengine.h" line="74"/>
         <source>Play previous file</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../bakaengine.h" line="70"/>
+        <location filename="../kuroengine.h" line="70"/>
         <source>Open a new window</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../bakaengine.h" line="72"/>
+        <location filename="../kuroengine.h" line="72"/>
         <source>Quit</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../bakaengine.h" line="73"/>
+        <location filename="../kuroengine.h" line="73"/>
         <source>Play next file</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../bakaengine.h" line="75"/>
+        <location filename="../kuroengine.h" line="75"/>
         <source>Stop playback</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../bakaengine.h" line="77"/>
+        <location filename="../kuroengine.h" line="77"/>
         <source>Open clipboard location</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../bakaengine.h" line="79"/>
+        <location filename="../kuroengine.h" line="79"/>
         <source>Open the last played file</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../bakaengine.h" line="80"/>
+        <location filename="../kuroengine.h" line="80"/>
         <source>Access command-line</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../bakaengine.h" line="81"/>
+        <location filename="../kuroengine.h" line="81"/>
         <source>Launch online help</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../bakaengine.h" line="82"/>
+        <location filename="../kuroengine.h" line="82"/>
         <source>Play/Pause</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../bakaengine.h" line="91"/>
+        <location filename="../kuroengine.h" line="91"/>
         <source>Select previous file on playlist</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../bakaengine.h" line="90"/>
+        <location filename="../kuroengine.h" line="90"/>
         <source>Select next file on playlist</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../bakaengine.h" line="92"/>
+        <location filename="../kuroengine.h" line="92"/>
         <source>Play selected file on playlist</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../bakaengine.h" line="93"/>
+        <location filename="../kuroengine.h" line="93"/>
         <source>Remove selected file from playlist</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../bakacommands.cpp" line="115"/>
+        <location filename="../kurocommands.cpp" line="115"/>
         <source>Saved to &quot;%0&quot;, with subs</source>
         <translation>자막없이 &quot;%0&quot;으로 저장됨</translation>
     </message>
     <message>
-        <location filename="../bakacommands.cpp" line="117"/>
+        <location filename="../kurocommands.cpp" line="117"/>
         <source>Saved to &quot;%0&quot;, without subs</source>
         <translation>자막과 함께 &quot;%0&quot;으로 저장됨</translation>
     </message>
@@ -629,8 +629,8 @@ Some features may not work and changed settings will not be saved.</source>
     <name>MainWindow</name>
     <message>
         <location filename="../ui/mainwindow.ui" line="23"/>
-        <source>Baka MPlayer</source>
-        <translation>Baka MPlayer</translation>
+        <source>Kuro Player</source>
+        <translation>Kuro Player</translation>
     </message>
     <message>
         <location filename="../ui/mainwindow.ui" line="260"/>
@@ -1010,8 +1010,8 @@ Some features may not work and changed settings will not be saved.</source>
     </message>
     <message>
         <location filename="../ui/mainwindow.ui" line="1397"/>
-        <source>About &amp;Baka MPlayer</source>
-        <translation>Baka MPlayer 정보(&amp;B)</translation>
+        <source>About &amp;Kuro Player</source>
+        <translation>Kuro Player 정보(&amp;B)</translation>
     </message>
     <message>
         <location filename="../ui/mainwindow.ui" line="1402"/>
@@ -1300,8 +1300,8 @@ Note: Value must be from %0 - %1</source>
         <translation type="vanished">자막 파일 열기</translation>
     </message>
     <message>
-        <source>http://bakamplayer.u8sand.net/help.php</source>
-        <translation type="vanished">http://bakamplayer.u8sand.net/help.php</translation>
+        <source>http://kuro-player.u8sand.net/help.php</source>
+        <translation type="vanished">http://kuro-player.u8sand.net/help.php</translation>
     </message>
     <message>
         <source>Dim Lights</source>

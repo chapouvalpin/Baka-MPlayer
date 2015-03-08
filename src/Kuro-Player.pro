@@ -8,7 +8,7 @@ VERSION   = 2.0.2
 QT       += core gui network svg
 CODECFORSRC = UTF-8
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
-TARGET = baka-mplayer
+TARGET = kuro-player
 TEMPLATE = app
 
 CONFIG += c++11 link_pkgconfig
@@ -41,8 +41,8 @@ win32 {
 
     # application information
     RC_ICONS += img/logo.ico
-    QMAKE_TARGET_PRODUCT += Baka MPlayer
-    QMAKE_TARGET_DESCRIPTION += Baka MPlayer
+    QMAKE_TARGET_PRODUCT += Kuro Player
+    QMAKE_TARGET_DESCRIPTION += Kuro Player
     #RC_LANG +=
 
     SOURCES += platform/win.cpp
@@ -61,20 +61,20 @@ isEmpty(APPDIR):APPDIR=/usr/share/applications
 isEmpty(DOCDIR):DOCDIR=/usr/share/doc
 isEmpty(MANDIR):MANDIR=/usr/share/man
 isEmpty(LICENSEDIR):LICENSEDIR=/usr/share/licenses
-isEmpty(BAKADIR):BAKADIR=/usr/share/baka-mplayer
+isEmpty(KURODIR):KURODIR=/usr/share/kuro-player
 
 target.path = $$INSTROOT$$BINDIR
 logo.path = $$INSTROOT$$MEDIADIR
 desktop.path = $$INSTROOT$$APPDIR
-manual.path = $$INSTROOT$$DOCDIR/baka-mplayer
+manual.path = $$INSTROOT$$DOCDIR/kuro-player
 man.path = $$INSTROOT$$MANDIR/man1
-license.path = $$INSTROOT$$LICENSEDIR/baka-mplayer
-translations.path = $$INSTROOT$$BAKADIR/translations
+license.path = $$INSTROOT$$LICENSEDIR/kuro-player
+translations.path = $$INSTROOT$$KURODIR/translations
 
-logo.files = ../etc/logo/baka-mplayer.svg
-desktop.files = ../etc/baka-mplayer.desktop
-manual.files = ../etc/doc/baka-mplayer.md
-man.files = ../etc/doc/baka-mplayer.1.gz
+logo.files = ../etc/logo/kuro-player.svg
+desktop.files = ../etc/kuro-player.desktop
+manual.files = ../etc/doc/kuro-player.md
+man.files = ../etc/doc/kuro-player.1.gz
 license.files = ../LICENSE
 
 INSTALLS += target logo desktop manual man license
@@ -97,7 +97,7 @@ CONFIG(embed_translations) {
     # add file to build
     RESOURCES += translations.qrc
 
-    BAKA_LANG_PATH += :/translations
+    KURO_LANG_PATH += :/translations
 
     # make sure translations are updated and released
     CONFIG *= update_translations release_translations
@@ -108,7 +108,7 @@ CONFIG(install_translations) {
     translations.files = $$TRANSLATIONS_COMPILED
     INSTALLS += translations
 
-    BAKA_LANG_PATH += $$BAKADIR/translations
+    KURO_LANG_PATH += $$KURODIR/translations
 
     # make sure translations are updated and released
     CONFIG *= update_translations release_translations
@@ -130,15 +130,15 @@ CONFIG(release_translations) {
 }
 
 
-isEmpty(SETTINGS_FILE):SETTINGS_FILE=bakamplayer
-DEFINES += "BAKA_MPLAYER_VERSION=\\\"$$VERSION\\\"" \
+isEmpty(SETTINGS_FILE):SETTINGS_FILE=kuro-player
+DEFINES += "KURO_PLAYER_VERSION=\\\"$$VERSION\\\"" \
            "SETTINGS_FILE=\\\"$$SETTINGS_FILE\\\"" \
-           "BAKA_MPLAYER_LANG_PATH=\\\"$$BAKA_LANG_PATH\\\""
-!isEmpty(BAKA_LANG):DEFINES += "BAKA_MPLAYER_LANG=\\\"$$BAKA_LANG\\\""
+           "KURO_PLAYER_LANG_PATH=\\\"$$KURO_LANG_PATH\\\""
+!isEmpty(KURO_LANG):DEFINES += "KURO_PLAYER_LANG=\\\"$$KURO_LANG\\\""
 
 SOURCES += main.cpp\
-    bakaengine.cpp \
-    bakacommands.cpp \
+    kuroengine.cpp \
+    kurocommands.cpp \
     mpvhandler.cpp \
     updatemanager.cpp \
     gesturehandler.cpp \
@@ -169,7 +169,7 @@ SOURCES += main.cpp\
     ui/keydialog.cpp
 
 HEADERS  += \
-    bakaengine.h \
+    kuroengine.h \
     mpvhandler.h \
     mpvtypes.h \
     updatemanager.h \

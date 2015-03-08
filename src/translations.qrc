@@ -1,8 +1,8 @@
 <RCC><qresource prefix="/">
-<file>translations/baka-mplayer_hr.qm</file>
-<file>translations/baka-mplayer_pt.qm</file>
-<file>translations/baka-mplayer_ru.qm</file>
-<file>translations/baka-mplayer_ko.qm</file>
-<file>translations/baka-mplayer_zh_CN.qm</file>
-<file>translations/baka-mplayer_it.qm</file>
+<file>translations/kuro-player_hr.qm</file>
+<file>translations/kuro-player_pt.qm</file>
+<file>translations/kuro-player_ru.qm</file>
+<file>translations/kuro-player_ko.qm</file>
+<file>translations/kuro-player_zh_CN.qm</file>
+<file>translations/kuro-player_it.qm</file>
 </qresource></RCC>

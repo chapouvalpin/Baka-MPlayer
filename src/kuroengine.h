@@ -1,5 +1,5 @@
-#ifndef BAKAENGINE_H
-#define BAKAENGINE_H
+#ifndef KUROENGINE_H
+#define KUROENGINE_H
 
 #include <QObject>
 #include <QString>
@@ -17,12 +17,12 @@ class OverlayHandler;
 class UpdateManager;
 class DimDialog;
 
-class BakaEngine : public QObject
+class KuroEngine : public QObject
 {
     Q_OBJECT
 public:
-    explicit BakaEngine(QObject *parent = 0);
-    ~BakaEngine();
+    explicit KuroEngine(QObject *parent = 0);
+    ~KuroEngine();
 
     MainWindow     *window;
     MpvHandler     *mpv;
@@ -101,7 +101,7 @@ public slots:
 
 protected slots:
     // Utility functions
-    void Print(QString what, QString who = "baka");
+    void Print(QString what, QString who = "kuro");
     void InvalidCommand(QString);
     void InvalidParameter(QString);
     void RequiresParameters(QString);
@@ -112,10 +112,10 @@ protected slots:
     void Load2_0_0();
     void Load1_9_9();
 
-    void LoadBaka2_0_2();
-    void LoadBaka2_0_1();
-    void LoadBaka2_0_0();
-    void LoadBaka1_9_9();
+    void LoadKuro2_0_2();
+    void LoadKuro2_0_1();
+    void LoadKuro2_0_0();
+    void LoadKuro1_9_9();
 
     void LoadMpv2_0_0();
     void LoadMpv1_9_9();
@@ -126,16 +126,16 @@ signals:
 
 
 private:
-    // This is a baka-command hashtable initialized below
+    // This is a kuro-command hashtable initialized below
     //  by using a hash-table -> function pointer we acheive O(1) function lookups
-    // Format: void BakaCommand(QStringList args)
-    // See bakacommands.cpp for function definitions
+    // Format: void KuroCommand(QStringList args)
+    // See kurocommands.cpp for function definitions
 
     // todo: write advanced information about commands
-    typedef void(BakaEngine::*BakaCommandFPtr)(QStringList&);
-    const QHash<QString, QPair<BakaCommandFPtr, QStringList>> BakaCommandMap = {
+    typedef void(KuroEngine::*KuroCommandFPtr)(QStringList&);
+    const QHash<QString, QPair<KuroCommandFPtr, QStringList>> KuroCommandMap = {
         {"mpv", // command
-         {&BakaEngine::BakaMpv,
+         {&KuroEngine::KuroMpv,
           {
            // params     description
            QString(), tr("executes mpv command"),
@@ -144,7 +144,7 @@ private:
          }
         },
         {"sh",
-         {&BakaEngine::BakaSh,
+         {&KuroEngine::KuroSh,
           {
            QString(), tr("executes system shell command"),
            QString()
@@ -152,16 +152,16 @@ private:
          }
         },
         {"new",
-         {&BakaEngine::BakaNew, // function pointer to command functionality
+         {&KuroEngine::KuroNew, // function pointer to command functionality
           {
            // params     description
-           QString(), tr("creates a new instance of baka-mplayer"),
+           QString(), tr("creates a new instance of kuro-player"),
            QString()
           }
          }
         },
         {"open_location",
-         {&BakaEngine::BakaOpenLocation,
+         {&KuroEngine::KuroOpenLocation,
           {
            QString(),
            tr("shows the open location dialog"),
@@ -170,7 +170,7 @@ private:
          }
         },
         {"open_clipboard",
-         {&BakaEngine::BakaOpenClipboard,
+         {&KuroEngine::KuroOpenClipboard,
           {
            QString(),
            tr("opens the clipboard"),
@@ -179,7 +179,7 @@ private:
          }
         },
         {"show_in_folder",
-         {&BakaEngine::BakaShowInFolder,
+         {&KuroEngine::KuroShowInFolder,
           {
            QString(),
            tr("shows the current file in folder"),
@@ -188,7 +188,7 @@ private:
          }
         },
         {"add_subtitles",
-         {&BakaEngine::BakaAddSubtitles,
+         {&KuroEngine::KuroAddSubtitles,
           {
            QString(),
            tr("add subtitles dialog"),
@@ -197,7 +197,7 @@ private:
          }
         },
         {"screenshot",
-         {&BakaEngine::BakaScreenshot,
+         {&KuroEngine::KuroScreenshot,
           {
            tr("[subs]"),
            tr("take a screenshot (with subtitles if specified)"),
@@ -206,7 +206,7 @@ private:
          }
         },
         {"media_info",
-         {&BakaEngine::BakaMediaInfo,
+         {&KuroEngine::KuroMediaInfo,
           {
            QString(),
            tr("toggles media info display"),
@@ -215,7 +215,7 @@ private:
          }
         },
         {"stop",
-         {&BakaEngine::BakaStop,
+         {&KuroEngine::KuroStop,
           {
            QString(),
            tr("stops the current playback"),
@@ -224,7 +224,7 @@ private:
          }
         },
         {"playlist",
-         {&BakaEngine::BakaPlaylist,
+         {&KuroEngine::KuroPlaylist,
           {
            tr("[...]"),
            tr("playlist options"),
@@ -233,7 +233,7 @@ private:
          }
         },
         {"jump",
-         {&BakaEngine::BakaJump,
+         {&KuroEngine::KuroJump,
           {
            QString(),
            tr("opens jump dialog"),
@@ -242,7 +242,7 @@ private:
          }
         },
         {"dim",
-         {&BakaEngine::BakaDim,
+         {&KuroEngine::KuroDim,
           {
            QString(),
            tr("toggles dim desktop"),
@@ -251,7 +251,7 @@ private:
          }
         },
         {"output",
-         {&BakaEngine::BakaOutput,
+         {&KuroEngine::KuroOutput,
           {
            QString(),
            tr("toggles output textbox"),
@@ -260,7 +260,7 @@ private:
          }
         },
         {"preferences",
-         {&BakaEngine::BakaPreferences,
+         {&KuroEngine::KuroPreferences,
           {
            QString(),
            tr("opens preferences dialog"),
@@ -269,7 +269,7 @@ private:
          }
         },
         {"online_help",
-         {&BakaEngine::BakaOnlineHelp,
+         {&KuroEngine::KuroOnlineHelp,
           {
            QString(),
            tr("launches online help"),
@@ -278,7 +278,7 @@ private:
          }
         },
         {"update",
-         {&BakaEngine::BakaUpdate,
+         {&KuroEngine::KuroUpdate,
           {
            QString(),
            tr("opens the update dialog or updates youtube-dl"),
@@ -287,7 +287,7 @@ private:
          }
         },
         {"open",
-         {&BakaEngine::BakaOpen,
+         {&KuroEngine::KuroOpen,
           {
            tr("[file]"),
            tr("opens the open file dialog or the file specified"),
@@ -296,7 +296,7 @@ private:
          }
         },
         {"play_pause",
-         {&BakaEngine::BakaPlayPause,
+         {&KuroEngine::KuroPlayPause,
           {
            QString(),
            tr("toggle play/pause state"),
@@ -305,7 +305,7 @@ private:
          }
         },
         {"fitwindow",
-         {&BakaEngine::BakaFitWindow,
+         {&KuroEngine::KuroFitWindow,
           {
            tr("[percent]"),
            tr("fit the window"),
@@ -314,7 +314,7 @@ private:
          }
         },
         {"volume",
-         {&BakaEngine::BakaVolume,
+         {&KuroEngine::KuroVolume,
           {
            tr("[level]"),
            tr("adjusts the volume"),
@@ -323,7 +323,7 @@ private:
          }
         },
         {"speed",
-         {&BakaEngine::BakaSpeed,
+         {&KuroEngine::KuroSpeed,
           {
            tr("[ratio]"),
            tr("adjusts the speed"),
@@ -332,7 +332,7 @@ private:
          }
         },
         {"fullscreen",
-         {&BakaEngine::BakaFullScreen,
+         {&KuroEngine::KuroFullScreen,
           {
            QString(),
            tr("toggles fullscreen state"),
@@ -341,7 +341,7 @@ private:
          }
         },
         {"boss",
-         {&BakaEngine::BakaBoss,
+         {&KuroEngine::KuroBoss,
           {
            QString(),
            tr("pause and hide the window"),
@@ -350,7 +350,7 @@ private:
          }
         },
         {"help",
-         {&BakaEngine::BakaHelp,
+         {&KuroEngine::KuroHelp,
           {
            tr("[command]"),
            tr("internal help menu"),
@@ -359,7 +359,7 @@ private:
          }
         },
         {"about",
-         {&BakaEngine::BakaAbout,
+         {&KuroEngine::KuroAbout,
           {
            tr("[qt]"),
            tr("open about dialog"),
@@ -368,7 +368,7 @@ private:
          }
         },
         {"debug",
-         {&BakaEngine::BakaDebug,
+         {&KuroEngine::KuroDebug,
           {
            tr("[level]"),
            tr("set mpv debugging level"),
@@ -377,45 +377,45 @@ private:
          }
         },
         {"quit",
-         {&BakaEngine::BakaQuit,
+         {&KuroEngine::KuroQuit,
           {
            QString(),
-           tr("quit baka-mplayer"),
+           tr("quit kuro-player"),
            QString()
           }
          }
         }
     };
-    // Baka Command Functions
-    void BakaMpv(QStringList&);
-    void BakaSh(QStringList&);
-    void BakaNew(QStringList&);
-    void BakaOpenLocation(QStringList&);
-    void BakaOpenClipboard(QStringList&);
-    void BakaShowInFolder(QStringList&);
-    void BakaAddSubtitles(QStringList&);
-    void BakaScreenshot(QStringList&);
-    void BakaMediaInfo(QStringList&);
-    void BakaStop(QStringList&);
-    void BakaPlaylist(QStringList&);
-    void BakaJump(QStringList&);
-    void BakaDim(QStringList&);
-    void BakaOutput(QStringList&);
-    void BakaPreferences(QStringList&);
-    void BakaOnlineHelp(QStringList&);
-    void BakaUpdate(QStringList&);
-    void BakaOpen(QStringList&);
-    void BakaPlayPause(QStringList&);
-    void BakaFitWindow(QStringList&);
-    void BakaAspect(QStringList&);
-    void BakaVolume(QStringList&);
-    void BakaSpeed(QStringList&);
-    void BakaFullScreen(QStringList&);
-    void BakaBoss(QStringList&);
-    void BakaHelp(QStringList&);
-    void BakaAbout(QStringList&);
-    void BakaDebug(QStringList&);
-    void BakaQuit(QStringList&);
+    // Kuro Command Functions
+    void KuroMpv(QStringList&);
+    void KuroSh(QStringList&);
+    void KuroNew(QStringList&);
+    void KuroOpenLocation(QStringList&);
+    void KuroOpenClipboard(QStringList&);
+    void KuroShowInFolder(QStringList&);
+    void KuroAddSubtitles(QStringList&);
+    void KuroScreenshot(QStringList&);
+    void KuroMediaInfo(QStringList&);
+    void KuroStop(QStringList&);
+    void KuroPlaylist(QStringList&);
+    void KuroJump(QStringList&);
+    void KuroDim(QStringList&);
+    void KuroOutput(QStringList&);
+    void KuroPreferences(QStringList&);
+    void KuroOnlineHelp(QStringList&);
+    void KuroUpdate(QStringList&);
+    void KuroOpen(QStringList&);
+    void KuroPlayPause(QStringList&);
+    void KuroFitWindow(QStringList&);
+    void KuroAspect(QStringList&);
+    void KuroVolume(QStringList&);
+    void KuroSpeed(QStringList&);
+    void KuroFullScreen(QStringList&);
+    void KuroBoss(QStringList&);
+    void KuroHelp(QStringList&);
+    void KuroAbout(QStringList&);
+    void KuroDebug(QStringList&);
+    void KuroQuit(QStringList&);
 public:
     void Open();
     void OpenLocation();
@@ -429,4 +429,4 @@ public:
     void Quit();
 };
 
-#endif // BAKAENGINE_H
+#endif // KUROENGINE_H

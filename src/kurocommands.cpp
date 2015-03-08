@@ -1,4 +1,4 @@
-#include "bakaengine.h"
+#include "kuroengine.h"
 
 #include <QApplication>
 #include <QFileDialog>
@@ -24,7 +24,7 @@
 #include "util.h"
 
 
-void BakaEngine::BakaMpv(QStringList &args)
+void KuroEngine::KuroMpv(QStringList &args)
 {
     if(mpv->playState > 0)
         Print(tr("mpv not yet initialized"));
@@ -35,7 +35,7 @@ void BakaEngine::BakaMpv(QStringList &args)
         RequiresParameters("mpv");
 }
 
-void BakaEngine::BakaSh(QStringList &args)
+void KuroEngine::KuroSh(QStringList &args)
 {
     if(!args.empty())
     {
@@ -58,7 +58,7 @@ void BakaEngine::BakaSh(QStringList &args)
         RequiresParameters("mpv");
 }
 
-void BakaEngine::BakaNew(QStringList &args)
+void KuroEngine::KuroNew(QStringList &args)
 {
     if(args.empty())
         QProcess::startDetached(QApplication::applicationFilePath(), {});
@@ -66,7 +66,7 @@ void BakaEngine::BakaNew(QStringList &args)
         InvalidParameter(args.join(' '));
 }
 
-void BakaEngine::BakaOpenLocation(QStringList &args)
+void KuroEngine::KuroOpenLocation(QStringList &args)
 {
     if(args.empty())
         OpenLocation();
@@ -74,13 +74,13 @@ void BakaEngine::BakaOpenLocation(QStringList &args)
         InvalidParameter(args.join(' '));
 }
 
-void BakaEngine::OpenLocation()
+void KuroEngine::OpenLocation()
 {
     mpv->LoadFile(LocationDialog::getUrl(mpv->getPath()+mpv->getFile(), window));
 }
 
 
-void BakaEngine::BakaOpenClipboard(QStringList &args)
+void KuroEngine::KuroOpenClipboard(QStringList &args)
 {
     if(args.empty())
         mpv->LoadFile(QApplication::clipboard()->text());
@@ -88,7 +88,7 @@ void BakaEngine::BakaOpenClipboard(QStringList &args)
         InvalidParameter(args.join(' '));
 }
 
-void BakaEngine::BakaShowInFolder(QStringList &args)
+void KuroEngine::KuroShowInFolder(QStringList &args)
 {
     if(args.empty())
         Util::ShowInFolder(mpv->getPath(), mpv->getFile());
@@ -96,7 +96,7 @@ void BakaEngine::BakaShowInFolder(QStringList &args)
         InvalidParameter(args.join(' '));
 }
 
-void BakaEngine::BakaAddSubtitles(QStringList &args)
+void KuroEngine::KuroAddSubtitles(QStringList &args)
 {
     QString trackFile;
     if(args.empty())
@@ -111,7 +111,7 @@ void BakaEngine::BakaAddSubtitles(QStringList &args)
     mpv->AddSubtitleTrack(trackFile);
 }
 
-void BakaEngine::BakaScreenshot(QStringList &args)
+void KuroEngine::KuroScreenshot(QStringList &args)
 {
     if(args.empty())
         Screenshot(false);
@@ -126,7 +126,7 @@ void BakaEngine::BakaScreenshot(QStringList &args)
     }
 }
 
-void BakaEngine::Screenshot(bool subs)
+void KuroEngine::Screenshot(bool subs)
 {
     if(window->screenshotDialog)
     {
@@ -148,7 +148,7 @@ void BakaEngine::Screenshot(bool subs)
 }
 
 
-void BakaEngine::BakaMediaInfo(QStringList &args)
+void KuroEngine::KuroMediaInfo(QStringList &args)
 {
     if(args.empty())
         MediaInfo(window->ui->actionMedia_Info->isChecked());
@@ -156,13 +156,13 @@ void BakaEngine::BakaMediaInfo(QStringList &args)
         InvalidParameter(args.join(' '));
 }
 
-void BakaEngine::MediaInfo(bool show)
+void KuroEngine::MediaInfo(bool show)
 {
     overlay->showInfoText(show);
 }
 
 
-void BakaEngine::BakaStop(QStringList &args)
+void KuroEngine::KuroStop(QStringList &args)
 {
     if(args.empty())
         mpv->Stop();
@@ -170,7 +170,7 @@ void BakaEngine::BakaStop(QStringList &args)
         InvalidParameter(args.join(' '));
 }
 
-void BakaEngine::BakaPlaylist(QStringList &args)
+void KuroEngine::KuroPlaylist(QStringList &args)
 {
     if(!args.empty())
     {
@@ -270,10 +270,10 @@ void BakaEngine::BakaPlaylist(QStringList &args)
             InvalidParameter(arg);
     }
     else
-        RequiresParameters("baka playlist");
+        RequiresParameters("kuro playlist");
 }
 
-void BakaEngine::BakaJump(QStringList &args)
+void KuroEngine::KuroJump(QStringList &args)
 {
     if(args.empty())
         Jump();
@@ -281,7 +281,7 @@ void BakaEngine::BakaJump(QStringList &args)
         InvalidParameter(args.join(' '));
 }
 
-void BakaEngine::Jump()
+void KuroEngine::Jump()
 {
     int time = JumpDialog::getTime(mpv->getFileInfo().length, window);
     if(time >= 0)
@@ -289,7 +289,7 @@ void BakaEngine::Jump()
 }
 
 
-void BakaEngine::BakaDim(QStringList &args)
+void KuroEngine::KuroDim(QStringList &args)
 {
     if(dimDialog == nullptr)
     {
@@ -302,7 +302,7 @@ void BakaEngine::BakaDim(QStringList &args)
         InvalidParameter(args.join(' '));
 }
 
-void BakaEngine::Dim(bool dim)
+void KuroEngine::Dim(bool dim)
 {
     if(dimDialog == nullptr)
     {
@@ -315,7 +315,7 @@ void BakaEngine::Dim(bool dim)
         dimDialog->close();
 }
 
-void BakaEngine::BakaOutput(QStringList &args)
+void KuroEngine::KuroOutput(QStringList &args)
 {
     if(args.empty())
         window->setDebug(!window->getDebug());
@@ -323,7 +323,7 @@ void BakaEngine::BakaOutput(QStringList &args)
         InvalidParameter(args.join(' '));
 }
 
-void BakaEngine::BakaPreferences(QStringList &args)
+void KuroEngine::KuroPreferences(QStringList &args)
 {
     if(args.empty())
         PreferencesDialog::showPreferences(this, window);
@@ -331,15 +331,15 @@ void BakaEngine::BakaPreferences(QStringList &args)
         InvalidParameter(args.join(' '));
 }
 
-void BakaEngine::BakaOnlineHelp(QStringList &args)
+void KuroEngine::KuroOnlineHelp(QStringList &args)
 {
     if(args.empty())
-        QDesktopServices::openUrl(QUrl(tr("http://bakamplayer.u8sand.net/help.php")));
+        QDesktopServices::openUrl(QUrl(tr("http://kuro-player.u8sand.net/help.php")));
     else
         InvalidParameter(args.join(' '));
 }
 
-void BakaEngine::BakaUpdate(QStringList &args)
+void KuroEngine::KuroUpdate(QStringList &args)
 {
     if(args.empty())
         UpdateDialog::CheckForUpdates(this, window);
@@ -356,7 +356,7 @@ void BakaEngine::BakaUpdate(QStringList &args)
     }
 }
 
-void BakaEngine::BakaOpen(QStringList &args)
+void KuroEngine::KuroOpen(QStringList &args)
 {
     if(args.empty())
         Open();
@@ -364,7 +364,7 @@ void BakaEngine::BakaOpen(QStringList &args)
         mpv->LoadFile(args.join(' '));
 }
 
-void BakaEngine::Open()
+void KuroEngine::Open()
 {
     mpv->LoadFile(QFileDialog::getOpenFileName(window,
                    tr("Open File"),mpv->getPath(),
@@ -376,7 +376,7 @@ void BakaEngine::Open()
 }
 
 
-void BakaEngine::BakaPlayPause(QStringList &args)
+void KuroEngine::KuroPlayPause(QStringList &args)
 {
     if(args.empty())
         PlayPause();
@@ -384,13 +384,13 @@ void BakaEngine::BakaPlayPause(QStringList &args)
         InvalidParameter(args.join(' '));
 }
 
-void BakaEngine::PlayPause()
+void KuroEngine::PlayPause()
 {
     mpv->PlayPause(window->ui->playlistWidget->CurrentItem());
 }
 
 
-void BakaEngine::BakaFitWindow(QStringList &args)
+void KuroEngine::KuroFitWindow(QStringList &args)
 {
     if(args.empty())
         FitWindow();
@@ -405,7 +405,7 @@ void BakaEngine::BakaFitWindow(QStringList &args)
     }
 }
 
-void BakaEngine::FitWindow(int percent, bool msg)
+void KuroEngine::FitWindow(int percent, bool msg)
 {
     if(window->isFullScreen() || window->isMaximized())
         return;
@@ -494,7 +494,7 @@ void BakaEngine::FitWindow(int percent, bool msg)
 }
 
 
-void BakaEngine::BakaVolume(QStringList &args)
+void KuroEngine::KuroVolume(QStringList &args)
 {
     if(!args.empty())
     {
@@ -514,7 +514,7 @@ void BakaEngine::BakaVolume(QStringList &args)
         RequiresParameters("volume");
 }
 
-void BakaEngine::BakaSpeed(QStringList &args)
+void KuroEngine::KuroSpeed(QStringList &args)
 {
     if(!args.empty())
     {
@@ -535,7 +535,7 @@ void BakaEngine::BakaSpeed(QStringList &args)
         RequiresParameters("speed");
 }
 
-void BakaEngine::BakaFullScreen(QStringList &args)
+void KuroEngine::KuroFullScreen(QStringList &args)
 {
     if(args.empty())
         window->FullScreen(!window->isFullScreen());
@@ -543,7 +543,7 @@ void BakaEngine::BakaFullScreen(QStringList &args)
         InvalidParameter(args.join(' '));
 }
 
-void BakaEngine::BakaBoss(QStringList &args)
+void KuroEngine::KuroBoss(QStringList &args)
 {
     if(args.empty())
     {
@@ -559,14 +559,14 @@ void BakaEngine::BakaBoss(QStringList &args)
         InvalidParameter(args.join(' '));
 }
 
-void BakaEngine::BakaHelp(QStringList &args)
+void KuroEngine::KuroHelp(QStringList &args)
 {
     if(args.empty())
     {
-        Print(tr("usage: baka <command> [...]"));
+        Print(tr("usage: kuro <command> [...]"));
         Print(tr("commands:"));
         int len, max_len = 22;
-        for(auto command = BakaCommandMap.begin(); command != BakaCommandMap.end(); ++command)
+        for(auto command = KuroCommandMap.begin(); command != KuroCommandMap.end(); ++command)
         {
             QString str = QString("  %0 %1").arg(command.key(), command->second[0]);
             len = str.length();
@@ -582,8 +582,8 @@ void BakaEngine::BakaHelp(QStringList &args)
         args.pop_front();
         if(args.empty())
         {
-            auto command = BakaCommandMap.find(arg);
-            if(command != BakaCommandMap.end()) //found
+            auto command = KuroCommandMap.find(arg);
+            if(command != KuroCommandMap.end()) //found
             {
                 Print(tr("usage: %0 %1").arg(arg, command->second[0]));
                 Print(tr("description:"));
@@ -602,12 +602,12 @@ void BakaEngine::BakaHelp(QStringList &args)
     }
 }
 
-void BakaEngine::BakaAbout(QStringList &args)
+void KuroEngine::KuroAbout(QStringList &args)
 {
     About(args.join(' '));
 }
 
-void BakaEngine::BakaDebug(QStringList &args)
+void KuroEngine::KuroDebug(QStringList &args)
 {
     if(!args.empty())
     {
@@ -622,10 +622,10 @@ void BakaEngine::BakaDebug(QStringList &args)
         RequiresParameters("debug");
 }
 
-void BakaEngine::About(QString what)
+void KuroEngine::About(QString what)
 {
     if(what == QString())
-        AboutDialog::about(BAKA_MPLAYER_VERSION, window);
+        AboutDialog::about(KURO_PLAYER_VERSION, window);
     else if(what == "qt")
         qApp->aboutQt();
     else
@@ -633,7 +633,7 @@ void BakaEngine::About(QString what)
 }
 
 
-void BakaEngine::BakaQuit(QStringList &args)
+void KuroEngine::KuroQuit(QStringList &args)
 {
     if(args.empty())
         Quit();
@@ -641,7 +641,7 @@ void BakaEngine::BakaQuit(QStringList &args)
         InvalidParameter(args.join(' '));
 }
 
-void BakaEngine::Quit()
+void KuroEngine::Quit()
 {
     qApp->quit();
 }

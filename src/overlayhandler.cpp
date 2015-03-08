@@ -1,6 +1,6 @@
 #include "overlayhandler.h"
 
-#include "bakaengine.h"
+#include "kuroengine.h"
 #include "mpvhandler.h"
 #include "ui/mainwindow.h"
 #include "ui_mainwindow.h"
@@ -16,7 +16,7 @@
 
 OverlayHandler::OverlayHandler(QObject *parent):
     QObject(parent),
-    baka(static_cast<BakaEngine*>(parent)),
+    kuro(static_cast<KuroEngine*>(parent)),
     overlay_font(Util::MonospaceFont(), 14),
     overlay_fm(overlay_font),
     min_overlay(4),
@@ -43,7 +43,7 @@ void OverlayHandler::showStatusText(const QString &text, int duration)
 {
     if(duration == 0 && text == QString())
     {
-        baka->mpv->RemoveOverlay(1); // remove the overlay
+        kuro->mpv->RemoveOverlay(1); // remove the overlay
         delete overlays[1]->canvas; // delete the canvas
         delete overlays[1]->timer; // delete the timer
         delete overlays[1]; // delete the overlay itself
@@ -56,7 +56,7 @@ void OverlayHandler::showStatusText(const QString &text, int duration)
 void OverlayHandler::showInfoText(bool show)
 {
     if(show) // show media info
-        showText(baka->mpv->getMediaInfo(), 0, QPoint(20, 20), 2);
+        showText(kuro->mpv->getMediaInfo(), 0, QPoint(20, 20), 2);
     else // hide media info
     {
         auto overlay_iter = overlays.find(2);
@@ -65,7 +65,7 @@ void OverlayHandler::showInfoText(bool show)
 
         if(overlays[2] != nullptr)
         {
-            baka->mpv->RemoveOverlay(2); // remove the overlay
+            kuro->mpv->RemoveOverlay(2); // remove the overlay
             delete overlays[2]->canvas; // delete the canvas
             delete overlays[2]; // delete the overlay itself
             overlays[2] = nullptr; // set it to nullptr
@@ -76,8 +76,8 @@ void OverlayHandler::showInfoText(bool show)
 void OverlayHandler::setFont(int n)
 {
     // lets assume we want 75 chars wide
-    double w = baka->window->ui->mpvFrame->width() / 75,
-           h = baka->window->ui->mpvFrame->height() / (1.55*n+1);
+    double w = kuro->window->ui->mpvFrame->width() / 75,
+           h = kuro->window->ui->mpvFrame->height() / (1.55*n+1);
     overlay_font.setPointSizeF(std::min(w, h));
     overlay_fm = QFontMetrics(overlay_font);
 }
@@ -107,7 +107,7 @@ void OverlayHandler::showText(const QString &text, int duration, QPoint pos, int
     painter.drawPath(path);
 
     // add as mpv overlay
-    baka->mpv->AddOverlay(
+    kuro->mpv->AddOverlay(
         id == -1 ? overlay_id : id,
         pos.x(), pos.y(),
         "&"+QString::number(quintptr(canvas->bits())),
@@ -151,7 +151,7 @@ void OverlayHandler::showText(const QString &text, int duration, QPoint pos, int
             connect(overlays[id]->timer, &QTimer::timeout, // on timeout
                     [=]
                     {
-                        baka->mpv->RemoveOverlay(id); // remove the overlay
+                        kuro->mpv->RemoveOverlay(id); // remove the overlay
                         delete overlays[id]->canvas; // delete the canvas
                         delete overlays[id]->timer; // delete the timer
                         delete overlays[id]; // delete the overlay itself

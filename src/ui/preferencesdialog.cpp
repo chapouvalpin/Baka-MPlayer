@@ -1,7 +1,7 @@
 #include "preferencesdialog.h"
 #include "ui_preferencesdialog.h"
 
-#include "bakaengine.h"
+#include "kuroengine.h"
 #include "ui/mainwindow.h"
 #include "mpvhandler.h"
 #include "ui/keydialog.h"
@@ -9,33 +9,33 @@
 #include <QFileDialog>
 #include <QMessageBox>
 
-PreferencesDialog::PreferencesDialog(BakaEngine *baka, QWidget *parent) :
+PreferencesDialog::PreferencesDialog(KuroEngine *kuro, QWidget *parent) :
     QDialog(parent),
     ui(new Ui::PreferencesDialog),
-    baka(baka),
+    kuro(kuro),
     screenshotDir("")
 {
     ui->setupUi(this);
 
     PopulateLangs();
 
-    QString ontop = baka->window->getOnTop();
+    QString ontop = kuro->window->getOnTop();
     if(ontop == "never")
         ui->neverRadioButton->setChecked(true);
     else if(ontop == "playing")
         ui->playingRadioButton->setChecked(true);
     else if(ontop == "always")
         ui->alwaysRadioButton->setChecked(true);
-    ui->groupBox_2->setChecked(baka->sysTrayIcon->isVisible());
-    ui->hidePopupCheckBox->setChecked(baka->window->getHidePopup());
-    ui->gestureCheckBox->setChecked(baka->window->getGestures());
-    ui->langComboBox->setCurrentText(baka->window->getLang());
-    int autofit = baka->window->getAutoFit();
+    ui->groupBox_2->setChecked(kuro->sysTrayIcon->isVisible());
+    ui->hidePopupCheckBox->setChecked(kuro->window->getHidePopup());
+    ui->gestureCheckBox->setChecked(kuro->window->getGestures());
+    ui->langComboBox->setCurrentText(kuro->window->getLang());
+    int autofit = kuro->window->getAutoFit();
     ui->autoFitCheckBox->setChecked((bool)autofit);
     ui->comboBox->setCurrentText(QString::number(autofit)+"%");
-    ui->formatComboBox->setCurrentText(baka->mpv->getScreenshotFormat());
-    screenshotDir = QDir::toNativeSeparators(baka->mpv->getScreenshotDir());
-    ui->templateLineEdit->setText(baka->mpv->getScreenshotTemplate());
+    ui->formatComboBox->setCurrentText(kuro->mpv->getScreenshotFormat());
+    screenshotDir = QDir::toNativeSeparators(kuro->mpv->getScreenshotDir());
+    ui->templateLineEdit->setText(kuro->mpv->getScreenshotTemplate());
 
     // add shortcuts
     PopulateShortcuts();
@@ -75,7 +75,7 @@ PreferencesDialog::PreferencesDialog(BakaEngine *baka, QWidget *parent) :
             {
                 if(QMessageBox::question(this, tr("Reset Keybinding"), tr("Are you sure you want to reset the shortcut keys to original bindings?")) == QMessageBox::Yes)
                 {
-                    baka->input = baka->default_input;
+                    kuro->input = kuro->default_input;
                     ui->infoWidget->clearContents();
                     while(numberOfShortcuts > 0)
                         RemoveRow(0);
@@ -90,7 +90,7 @@ PreferencesDialog::PreferencesDialog(BakaEngine *baka, QWidget *parent) :
                 if(row == -1)
                     return;
 
-                baka->input[ui->infoWidget->item(row, 0)->text()] = {QString(), QString()};
+                kuro->input[ui->infoWidget->item(row, 0)->text()] = {QString(), QString()};
                 RemoveRow(row);
             });
 
@@ -108,36 +108,36 @@ PreferencesDialog::PreferencesDialog(BakaEngine *baka, QWidget *parent) :
 PreferencesDialog::~PreferencesDialog()
 {
     if(ui->neverRadioButton->isChecked())
-        baka->window->setOnTop("never");
+        kuro->window->setOnTop("never");
     else if(ui->playingRadioButton->isChecked())
-        baka->window->setOnTop("playing");
+        kuro->window->setOnTop("playing");
     else if(ui->alwaysRadioButton->isChecked())
-        baka->window->setOnTop("always");
-    baka->sysTrayIcon->setVisible(ui->groupBox_2->isChecked());
-    baka->window->setHidePopup(ui->hidePopupCheckBox->isChecked());
-    baka->window->setGestures(ui->gestureCheckBox->isChecked());
-    baka->window->setLang(ui->langComboBox->currentText());
+        kuro->window->setOnTop("always");
+    kuro->sysTrayIcon->setVisible(ui->groupBox_2->isChecked());
+    kuro->window->setHidePopup(ui->hidePopupCheckBox->isChecked());
+    kuro->window->setGestures(ui->gestureCheckBox->isChecked());
+    kuro->window->setLang(ui->langComboBox->currentText());
     if(ui->autoFitCheckBox->isChecked())
-        baka->window->setAutoFit(ui->comboBox->currentText().left(ui->comboBox->currentText().length()-1).toInt());
+        kuro->window->setAutoFit(ui->comboBox->currentText().left(ui->comboBox->currentText().length()-1).toInt());
     else
-        baka->window->setAutoFit(0);
-    baka->mpv->ScreenshotFormat(ui->formatComboBox->currentText());
-    baka->mpv->ScreenshotDirectory(screenshotDir);
-    baka->mpv->ScreenshotTemplate(ui->templateLineEdit->text());
-    baka->window->MapShortcuts();
+        kuro->window->setAutoFit(0);
+    kuro->mpv->ScreenshotFormat(ui->formatComboBox->currentText());
+    kuro->mpv->ScreenshotDirectory(screenshotDir);
+    kuro->mpv->ScreenshotTemplate(ui->templateLineEdit->text());
+    kuro->window->MapShortcuts();
     delete ui;
 }
 
-void PreferencesDialog::showPreferences(BakaEngine *baka, QWidget *parent)
+void PreferencesDialog::showPreferences(KuroEngine *kuro, QWidget *parent)
 {
-    PreferencesDialog dialog(baka, parent);
+    PreferencesDialog dialog(kuro, parent);
     dialog.exec();
 }
 
 void PreferencesDialog::PopulateLangs()
 {
     // open the language directory
-    QDir root(BAKA_MPLAYER_LANG_PATH);
+    QDir root(KURO_PLAYER_LANG_PATH);
     // get files in the directory with .qm extension
     QFileInfoList flist;
     flist = root.entryInfoList({"*.qm"}, QDir::Files);
@@ -145,7 +145,7 @@ void PreferencesDialog::PopulateLangs()
     ui->langComboBox->addItem("auto");
     for(auto &i : flist)
     {
-        QString lang = i.fileName().mid(i.fileName().indexOf("_") + 1); // baka-mplayer_....
+        QString lang = i.fileName().mid(i.fileName().indexOf("_") + 1); // kuro-player_....
         lang.chop(3); // -  .qm
         ui->langComboBox->addItem(lang);
     }
@@ -154,7 +154,7 @@ void PreferencesDialog::PopulateLangs()
 void PreferencesDialog::PopulateShortcuts()
 {
     numberOfShortcuts = 0;
-    for(auto iter = baka->input.begin(); iter != baka->input.end(); ++iter)
+    for(auto iter = kuro->input.begin(); iter != kuro->input.end(); ++iter)
     {
         if(iter->first == QString() || iter->second == QString())
             continue;
@@ -211,7 +211,7 @@ void PreferencesDialog::SelectKey(bool add, QPair<QString, QPair<QString, QStrin
                        tr("%0 is already being used. Would you like to change its function?").arg(
                            result.first)) == QMessageBox::Yes)
                 {
-                    baka->input[ui->infoWidget->item(i, 0)->text()] = {QString(), QString()};
+                    kuro->input[ui->infoWidget->item(i, 0)->text()] = {QString(), QString()};
                     RemoveRow(i);
                     status = 0;
                 }
@@ -229,7 +229,7 @@ void PreferencesDialog::SelectKey(bool add, QPair<QString, QPair<QString, QStrin
                 AddRow(result.first, result.second.first, result.second.second);
             else // change
                 ModifyRow(ui->infoWidget->currentRow(), result.first, result.second.first, result.second.second);
-            baka->input[result.first] = result.second;
+            kuro->input[result.first] = result.second;
             status = 2;
         }
         else

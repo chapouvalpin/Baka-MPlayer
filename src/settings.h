@@ -7,7 +7,7 @@
 #include <QStringList>
 #include <QDate>
 
-class BakaEngine;
+class KuroEngine;
 
 class Settings : public QObject
 {
@@ -52,7 +52,7 @@ protected:
     QStringList SplitQStringList(QString list);
 
 private:
-    BakaEngine *baka;
+    KuroEngine *kuro;
 
     SettingsData data;
     QString group, file;

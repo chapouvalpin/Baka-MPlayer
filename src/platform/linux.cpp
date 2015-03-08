@@ -16,7 +16,7 @@ namespace Util {
 
 QString VersionFileUrl()
 {
-    return "http://bakamplayer.u8sand.net/version_linux";
+    return "http://kuro-player.u8sand.net/version_linux";
 }
 
 QString DownloadFileUrl()

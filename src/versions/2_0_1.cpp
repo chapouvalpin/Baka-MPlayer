@@ -1,19 +1,19 @@
-#include "bakaengine.h"
+#include "kuroengine.h"
 
 #include "ui/mainwindow.h"
 #include "ui_mainwindow.h"
 #include "settings.h"
 #include "util.h"
 
-void BakaEngine::Load2_0_1()
+void KuroEngine::Load2_0_1()
 {
-    LoadBaka2_0_1();
+    LoadKuro2_0_1();
     LoadMpv2_0_0();
 }
 
-void BakaEngine::LoadBaka2_0_1()
+void KuroEngine::LoadKuro2_0_1()
 {
-    settings->beginGroup("baka-mplayer");
+    settings->beginGroup("kuro-player");
     window->setOnTop(settings->value("onTop", "never"));
     window->setAutoFit(settings->valueInt("autoFit", 100));
     sysTrayIcon->setVisible(settings->valueBool("trayIcon", false));

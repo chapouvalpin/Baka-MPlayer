@@ -5,7 +5,7 @@
 #include <QMimeData>
 #include <QDesktopWidget>
 
-#include "bakaengine.h"
+#include "kuroengine.h"
 #include "mpvhandler.h"
 #include "gesturehandler.h"
 #include "overlayhandler.h"
@@ -44,7 +44,7 @@ MainWindow::MainWindow(QWidget *parent):
     connect(playpause_toolbutton, &QWinThumbnailToolButton::clicked,
             [=]
             {
-                baka->PlayPause();
+                kuro->PlayPause();
             });
 
     next_toolbutton = new QWinThumbnailToolButton(thumbnail_toolbar);
@@ -65,10 +65,10 @@ MainWindow::MainWindow(QWidget *parent):
     addActions(ui->menubar->actions()); // makes menubar shortcuts work even when menubar is hidden
 
     // initialize managers/handlers
-    baka = new BakaEngine(this);
-    mpv = baka->mpv;
+    kuro = new KuroEngine(this);
+    mpv = kuro->mpv;
 
-    ui->playlistWidget->AttachEngine(baka);
+    ui->playlistWidget->AttachEngine(kuro);
     ui->mpvFrame->installEventFilter(this); // capture events on mpvFrame in the eventFilter function
     autohide = new QTimer(this);
 
@@ -127,7 +127,7 @@ MainWindow::MainWindow(QWidget *parent):
         {"update", ui->action_Check_for_Updates},
         {"update youtube-dl", ui->actionUpdate_Streaming_Support},
         {"about qt", ui->actionAbout_Qt},
-        {"about", ui->actionAbout_Baka_MPlayer}
+        {"about", ui->actionAbout_Kuro_Player}
     };
 
     // map actions to commands
@@ -135,7 +135,7 @@ MainWindow::MainWindow(QWidget *parent):
     {
         const QString cmd = action.key();
         connect(*action, &QAction::triggered,
-                [=] { baka->Command(cmd); });
+                [=] { kuro->Command(cmd); });
     }
 
     // setup signals & slots
@@ -152,27 +152,27 @@ MainWindow::MainWindow(QWidget *parent):
                     QTranslator *tmp;
 
                     // load the system translations provided by Qt
-                    tmp = baka->qtTranslator;
-                    baka->qtTranslator = new QTranslator();
-                    baka->qtTranslator->load(QString("qt_%0").arg(lang), QLibraryInfo::location(QLibraryInfo::TranslationsPath));
-                    qApp->installTranslator(baka->qtTranslator);
+                    tmp = kuro->qtTranslator;
+                    kuro->qtTranslator = new QTranslator();
+                    kuro->qtTranslator->load(QString("qt_%0").arg(lang), QLibraryInfo::location(QLibraryInfo::TranslationsPath));
+                    qApp->installTranslator(kuro->qtTranslator);
                     if(tmp != nullptr)
                         delete tmp;
 
                     // load the application translations
-                    tmp = baka->translator;
-                    baka->translator = new QTranslator();
-                    baka->translator->load(QString("baka-mplayer_%0").arg(lang), BAKA_MPLAYER_LANG_PATH);
-                    qApp->installTranslator(baka->translator);
+                    tmp = kuro->translator;
+                    kuro->translator = new QTranslator();
+                    kuro->translator->load(QString("kuro-player_%0").arg(lang), KURO_PLAYER_LANG_PATH);
+                    qApp->installTranslator(kuro->translator);
                     if(tmp != nullptr)
                         delete tmp;
                 }
                 else
                 {
-                    if(baka->qtTranslator != nullptr)
-                        qApp->removeTranslator(baka->qtTranslator);
-                    if(baka->translator != nullptr)
-                        qApp->removeTranslator(baka->translator);
+                    if(kuro->qtTranslator != nullptr)
+                        qApp->removeTranslator(kuro->qtTranslator);
+                    if(kuro->translator != nullptr)
+                        qApp->removeTranslator(kuro->translator);
                 }
 
                 // save strings we want to keep
@@ -217,7 +217,7 @@ MainWindow::MainWindow(QWidget *parent):
                 ui->verticalWidget->setVisible(b);
             });
 
-    connect(baka->sysTrayIcon, &QSystemTrayIcon::activated,
+    connect(kuro->sysTrayIcon, &QSystemTrayIcon::activated,
             [=](QSystemTrayIcon::ActivationReason reason)
             {
                 if(reason == QSystemTrayIcon::Trigger)
@@ -225,11 +225,11 @@ MainWindow::MainWindow(QWidget *parent):
                     if(!hidePopup)
                     {
                         if(mpv->getPlayState() == Mpv::Playing)
-                            baka->sysTrayIcon->showMessage("Baka MPlayer", tr("Playing"), QSystemTrayIcon::NoIcon, 4000);
+                            kuro->sysTrayIcon->showMessage("Kuro Player", tr("Playing"), QSystemTrayIcon::NoIcon, 4000);
                         else if(mpv->getPlayState() == Mpv::Paused)
-                            baka->sysTrayIcon->showMessage("Baka MPlayer", tr("Paused"), QSystemTrayIcon::NoIcon, 4000);
+                            kuro->sysTrayIcon->showMessage("Kuro Player", tr("Paused"), QSystemTrayIcon::NoIcon, 4000);
                     }
-                    baka->PlayPause();
+                    kuro->PlayPause();
                 }
 
             });
@@ -247,7 +247,7 @@ MainWindow::MainWindow(QWidget *parent):
             });
 
     // dimDialog
-    connect(baka->dimDialog, &DimDialog::visbilityChanged,
+    connect(kuro->dimDialog, &DimDialog::visbilityChanged,
             [=](bool dim)
             {
                 ui->action_Dim_Lights->setChecked(dim);
@@ -286,9 +286,9 @@ MainWindow::MainWindow(QWidget *parent):
                 if(mpv->getPlayState() > 0)
                 {
                     if(fileInfo.media_title == "")
-                        setWindowTitle("Baka MPlayer");
+                        setWindowTitle("Kuro Player");
                     else if(fileInfo.media_title == "-")
-                        setWindowTitle("Baka MPlayer: stdin"); // todo: disable playlist?
+                        setWindowTitle("Kuro Player: stdin"); // todo: disable playlist?
                     else
                         setWindowTitle(fileInfo.media_title);
 
@@ -296,7 +296,7 @@ MainWindow::MainWindow(QWidget *parent):
                     ui->seekBar->setTracking(fileInfo.length);
 
                     if(ui->actionMedia_Info->isChecked())
-                        baka->MediaInfo(true);
+                        kuro->MediaInfo(true);
 
                     if(!remaining)
                         ui->remainingLabel->setText(Util::FormatTime(fileInfo.length, fileInfo.length));
@@ -415,10 +415,10 @@ MainWindow::MainWindow(QWidget *parent):
                         ui->actionFrame_Back_Step->setEnabled(false);
 
 
-                        if(baka->sysTrayIcon->isVisible() && !hidePopup)
+                        if(kuro->sysTrayIcon->isVisible() && !hidePopup)
                         {
                             // todo: use {artist} - {title}
-                            baka->sysTrayIcon->showMessage("Baka MPlayer", mpv->getFileInfo().media_title, QSystemTrayIcon::NoIcon, 4000);
+                            kuro->sysTrayIcon->showMessage("Kuro Player", mpv->getFileInfo().media_title, QSystemTrayIcon::NoIcon, 4000);
                         }
                     }
                 }
@@ -470,7 +470,7 @@ MainWindow::MainWindow(QWidget *parent):
                 switch(playState)
                 {
                 case Mpv::Loaded:
-                    baka->overlay->showStatusText("Loading...", 0);
+                    kuro->overlay->showStatusText("Loading...", 0);
                     break;
 
                 case Mpv::Started:
@@ -487,12 +487,12 @@ MainWindow::MainWindow(QWidget *parent):
                     }
                     if(pathChanged && autoFit)
                     {
-                        baka->FitWindow(autoFit, false);
+                        kuro->FitWindow(autoFit, false);
                         pathChanged = false;
                     }
                     SetPlaybackControls(true);
                     mpv->Play();
-                    baka->overlay->showStatusText(QString(), 0);
+                    kuro->overlay->showStatusText(QString(), 0);
                 case Mpv::Playing:
                     SetPlayButtonIcon(false);
                     if(onTop == "playing")
@@ -522,7 +522,7 @@ MainWindow::MainWindow(QWidget *parent):
                             }
                             else // stop
                             {
-                                setWindowTitle("Baka MPlayer");
+                                setWindowTitle("Kuro Player");
                                 SetPlaybackControls(false);
                                 ui->seekBar->setTracking(0);
                                 ui->actionStop_after_Current->setChecked(false);
@@ -652,19 +652,19 @@ MainWindow::MainWindow(QWidget *parent):
     connect(ui->openButton, &OpenButton::LeftClick,                     // Playback: Open button (left click)
             [=]
             {
-                baka->Open();
+                kuro->Open();
             });
 
     connect(ui->openButton, &OpenButton::MiddleClick,                   // Playback: Open button (middle click)
             [=]
             {
-                baka->Jump();
+                kuro->Jump();
             });
 
     connect(ui->openButton, &OpenButton::RightClick,                    // Playback: Open button (right click)
             [=]
             {
-                baka->OpenLocation();
+                kuro->OpenLocation();
             });
 
     connect(ui->remainingLabel, &CustomLabel::clicked,                  // Playback: Remaining Label
@@ -688,7 +688,7 @@ MainWindow::MainWindow(QWidget *parent):
     connect(ui->playButton, &QPushButton::clicked,                      // Playback: Play/pause button
             [=]
             {
-                baka->PlayPause();
+                kuro->PlayPause();
             });
 
     connect(ui->nextButton, &IndexButton::clicked,                      // Playback: Next button
@@ -730,7 +730,7 @@ MainWindow::MainWindow(QWidget *parent):
                 }
                 blockSignals(false);
                 if(ui->actionMedia_Info->isChecked())
-                    baka->overlay->showInfoText();
+                    kuro->overlay->showInfoText();
             });
 
     connect(ui->searchBox, &QLineEdit::textChanged,                     // Playlist: Search box
@@ -783,7 +783,7 @@ MainWindow::MainWindow(QWidget *parent):
     connect(ui->inputLineEdit, &CustomLineEdit::submitted,
             [=](QString s)
             {
-                baka->Command(s);
+                kuro->Command(s);
                 ui->inputLineEdit->setText("");
             });
 
@@ -796,20 +796,20 @@ MainWindow::MainWindow(QWidget *parent):
 
 MainWindow::~MainWindow()
 {
-    baka->SaveSettings();
+    kuro->SaveSettings();
 
     // Note: child objects _should_ not need to be deleted because
     // all children should get deleted when mainwindow is deleted
     // see: http://qt-project.org/doc/qt-4.8/objecttrees.html
 
-    // but apparently they don't (https://github.com/u8sand/Baka-MPlayer/issues/47)
+    // but apparently they don't (https://github.com/u8sand/Kuro-Player/issues/47)
 #if defined(Q_OS_WIN)
     delete prev_toolbutton;
     delete playpause_toolbutton;
     delete next_toolbutton;
     delete thumbnail_toolbar;
 #endif
-    delete baka;
+    delete kuro;
     delete ui;
 }
 
@@ -818,7 +818,7 @@ void MainWindow::Load(QString file)
     // load the settings here--the constructor has already been called
     // this solves some issues with setting things before the constructor has ended
     menuVisible = ui->menubar->isVisible(); // does the OS use a menubar? (appmenu doesn't)
-    baka->LoadSettings();
+    kuro->LoadSettings();
     mpv->LoadFile(file);
 }
 
@@ -826,7 +826,7 @@ void MainWindow::MapShortcuts()
 {
     auto tmp = commandActionMap;
     // map shortcuts to actions
-    for(auto input_iter = baka->input.begin(); input_iter != baka->input.end(); ++input_iter)
+    for(auto input_iter = kuro->input.begin(); input_iter != kuro->input.end(); ++input_iter)
     {
         auto commandAction = tmp.find(input_iter->first);
         if(commandAction != tmp.end())
@@ -870,12 +870,12 @@ void MainWindow::mousePressEvent(QMouseEvent *event)
         if(gestures)
         {
             if(ui->mpvFrame->rect().contains(event->pos())) // mouse is in the mpvFrame
-                baka->gesture->Begin(GestureHandler::HSEEK_VVOLUME, event->globalPos(), pos());
+                kuro->gesture->Begin(GestureHandler::HSEEK_VVOLUME, event->globalPos(), pos());
             else if(!isFullScreen()) // not fullscreen
-                baka->gesture->Begin(GestureHandler::MOVE, event->globalPos(), pos());
+                kuro->gesture->Begin(GestureHandler::MOVE, event->globalPos(), pos());
         }
         else if(!isFullScreen()) // not fullscreen
-            baka->gesture->Begin(GestureHandler::MOVE, event->globalPos(), pos());
+            kuro->gesture->Begin(GestureHandler::MOVE, event->globalPos(), pos());
     }
     else if(event->button() == Qt::RightButton &&
             !isFullScreen() &&  // not fullscreen
@@ -889,7 +889,7 @@ void MainWindow::mousePressEvent(QMouseEvent *event)
 
 void MainWindow::mouseReleaseEvent(QMouseEvent *event)
 {
-    baka->gesture->End();
+    kuro->gesture->End();
     QMainWindow::mouseReleaseEvent(event);
 }
 
@@ -898,7 +898,7 @@ void MainWindow::mouseMoveEvent(QMouseEvent *event)
     static QRect playbackRect,
                  playlistRect;
 
-    if(baka->gesture->Process(event->globalPos()))
+    if(kuro->gesture->Process(event->globalPos()))
         event->accept();
     else if(isFullScreen())
     {
@@ -981,7 +981,7 @@ void MainWindow::wheelEvent(QWheelEvent *event)
 void MainWindow::keyPressEvent(QKeyEvent *event)
 {
     // keyboard shortcuts
-    if(!baka->input.empty())
+    if(!kuro->input.empty())
     {
         // Convert KeyEvent to Shortcut:
         QString key = QString();
@@ -992,16 +992,16 @@ void MainWindow::keyPressEvent(QKeyEvent *event)
         key += QKeySequence(event->key()).toString();
 
         // find shortcut in input hash table
-        auto iter = baka->input.find(key);
-        if(iter != baka->input.end())
-            baka->Command(iter->first); // execute command
+        auto iter = kuro->input.find(key);
+        if(iter != kuro->input.end())
+            kuro->Command(iter->first); // execute command
     }
 }
 
 void MainWindow::resizeEvent(QResizeEvent *event)
 {
     if(ui->actionMedia_Info->isChecked())
-        baka->overlay->showInfoText();
+        kuro->overlay->showInfoText();
     QMainWindow::resizeEvent(event);
 }
 
@@ -1068,7 +1068,7 @@ void MainWindow::SetPlaybackControls(bool enable)
     ui->menuS_peed->setEnabled(enable);
     ui->action_Jump_to_Time->setEnabled(enable);
     ui->actionMedia_Info->setEnabled(enable);
-    ui->actionShow_in_Folder->setEnabled(enable && baka->mpv->getPath() != QString());
+    ui->actionShow_in_Folder->setEnabled(enable && kuro->mpv->getPath() != QString());
     ui->action_Full_Screen->setEnabled(enable);
     if(!enable)
     {
@@ -1083,8 +1083,8 @@ void MainWindow::FullScreen(bool fs)
 {
     if(fs)
     {
-        if(baka->dimDialog && baka->dimDialog->isVisible())
-            baka->Dim(false);
+        if(kuro->dimDialog && kuro->dimDialog->isVisible())
+            kuro->Dim(false);
         setWindowState(windowState() | Qt::WindowFullScreen);
         ui->menubar->setVisible(false);
         ui->splitter->handle(1)->installEventFilter(this); // capture events for the splitter

@@ -1,4 +1,4 @@
-#include "bakaengine.h"
+#include "kuroengine.h"
 
 #include "ui/mainwindow.h"
 #include "ui_mainwindow.h"
@@ -7,15 +7,15 @@
 
 #include <QDir>
 
-void BakaEngine::Load2_0_0()
+void KuroEngine::Load2_0_0()
 {
-    LoadBaka2_0_0();
+    LoadKuro2_0_0();
     LoadMpv2_0_0();
 }
 
-void BakaEngine::LoadBaka2_0_0()
+void KuroEngine::LoadKuro2_0_0()
 {
-    settings->beginGroup("baka-mplayer");
+    settings->beginGroup("kuro-player");
     window->setOnTop(QString(settings->value("onTop", "never")));
     window->setAutoFit(settings->valueInt("autoFit", 100));
     sysTrayIcon->setVisible(settings->valueBool("trayIcon", false));
@@ -35,7 +35,7 @@ void BakaEngine::LoadBaka2_0_0()
     window->UpdateRecentFiles();
 }
 
-void BakaEngine::LoadMpv2_0_0()
+void KuroEngine::LoadMpv2_0_0()
 {
     settings->beginGroup("mpv");
     for(Settings::SettingsGroupData::iterator entry = settings->map().begin(); entry != settings->map().end(); ++entry)

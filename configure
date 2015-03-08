@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # options:
-# "TRANSLATIONS=translations/baka-mplayer_$lang.ts" - put language(s) you want, override
-# "BAKA_LANG="                                      - overide language selection with language code (default: use locale)
+# "TRANSLATIONS=translations/kuro-player_$lang.ts" - put language(s) you want, override
+# "KURO_LANG="                                      - overide language selection with language code (default: use locale)
 # "CONFIG+=embed_translations"                      - .qm files will be compiled into the binary
 # "CONFIG+=install_translations"                    - make install will install .qm files on your system
 # "CONFIG+=begin_translations"                      - .ts files will be updated based on project changes
@@ -12,11 +12,11 @@
 # "BINDIR=/usr/bin"                                 - installation binary directory
 # "MEDIADIR=/usr/share/pixmaps"                     - installation media directory
 # "APPDIR=/usr/share/applications"                  - installation application directory
-# "DOCDIR=/usr/share/doc/baka-mplayer"              - installation documentation directory
+# "DOCDIR=/usr/share/doc/kuro-player"              - installation documentation directory
 # "MANDIR=/usr/share/man"                           - installation manual directory
-# "LICENSEDIR=/usr/share/licenses/baka-mplayer"     - installation license directory
-# "BAKADIR=/usr/share/baka-mplayer"                 - installation directory
-# "SETTINGS_FILE=bakamplayer"                       - settings file name
+# "LICENSEDIR=/usr/share/licenses/kuro-player"     - installation license directory
+# "KURODIR=/usr/share/kuro-player"                 - installation directory
+# "SETTINGS_FILE=kuro-player"                       - settings file name
 
 
 # find qmake
@@ -58,4 +58,4 @@ if [ "$QMAKE" == "" ]; then
   fi
 fi
 
-$QMAKE src/Baka-MPlayer.pro CONFIG+=release $@
+$QMAKE src/Kuro-Player.pro CONFIG+=release $@

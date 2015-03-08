@@ -1,4 +1,4 @@
-#include "bakaengine.h"
+#include "kuroengine.h"
 
 #include "ui/mainwindow.h"
 #include "ui_mainwindow.h"
@@ -10,16 +10,16 @@
 #include "updatemanager.h"
 #endif
 
-void BakaEngine::Load2_0_2()
+void KuroEngine::Load2_0_2()
 {
-    LoadBaka2_0_2();
+    LoadKuro2_0_2();
     LoadMpv2_0_0();
     LoadInput2_0_2();
 }
 
-void BakaEngine::LoadBaka2_0_2()
+void KuroEngine::LoadKuro2_0_2()
 {
-    settings->beginGroup("baka-mplayer");
+    settings->beginGroup("kuro-player");
     window->setOnTop(settings->value("onTop", "never"));
     window->setAutoFit(settings->valueInt("autoFit", 100));
     sysTrayIcon->setVisible(settings->valueBool("trayIcon", false));
@@ -45,7 +45,7 @@ void BakaEngine::LoadBaka2_0_2()
     window->UpdateRecentFiles();
 }
 
-void BakaEngine::LoadInput2_0_2()
+void KuroEngine::LoadInput2_0_2()
 {
     settings->beginGroup("input");
 

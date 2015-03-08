@@ -1,16 +1,16 @@
 #include "updatedialog.h"
 #include "ui_updatedialog.h"
 
-#include "bakaengine.h"
+#include "kuroengine.h"
 #include "updatemanager.h"
 #include "util.h"
 
 #include <QDesktopServices>
 
-UpdateDialog::UpdateDialog(BakaEngine *baka, QWidget *parent) :
+UpdateDialog::UpdateDialog(KuroEngine *kuro, QWidget *parent) :
     QDialog(parent),
     ui(new Ui::UpdateDialog),
-    baka(baka),
+    kuro(kuro),
     timer(nullptr),
     init(false)
 {
@@ -23,7 +23,7 @@ UpdateDialog::UpdateDialog(BakaEngine *baka, QWidget *parent) :
     ui->cancelButton->setDefault(true);
 #endif
 
-    connect(baka->update, &UpdateManager::progressSignal,
+    connect(kuro->update, &UpdateManager::progressSignal,
             [=](int percent)
             {
                 ui->progressBar->setValue(percent);
@@ -62,7 +62,7 @@ UpdateDialog::UpdateDialog(BakaEngine *baka, QWidget *parent) :
                 }
             });
 
-    connect(baka->update, &UpdateManager::messageSignal,
+    connect(kuro->update, &UpdateManager::messageSignal,
             [=](QString msg)
             {
                 ui->plainTextEdit->appendPlainText(msg+"\n");
@@ -73,17 +73,17 @@ UpdateDialog::UpdateDialog(BakaEngine *baka, QWidget *parent) :
             [=]
             {
                 Prepare();
-                baka->update->DownloadUpdate(Util::DownloadFileUrl());
+                kuro->update->DownloadUpdate(Util::DownloadFileUrl());
             });
 #endif
 
     connect(ui->cancelButton, SIGNAL(clicked()),
             this, SLOT(reject()));
 
-    if(baka->update->getInfo().empty())
+    if(kuro->update->getInfo().empty())
     {
         Prepare();
-        baka->update->CheckForUpdates();
+        kuro->update->CheckForUpdates();
     }
     else
     {
@@ -99,9 +99,9 @@ UpdateDialog::~UpdateDialog()
     delete ui;
 }
 
-void UpdateDialog::CheckForUpdates(BakaEngine *baka, QWidget *parent)
+void UpdateDialog::CheckForUpdates(KuroEngine *kuro, QWidget *parent)
 {
-    UpdateDialog *dialog = new UpdateDialog(baka, parent);
+    UpdateDialog *dialog = new UpdateDialog(kuro, parent);
     dialog->exec();
 }
 
@@ -119,9 +119,9 @@ void UpdateDialog::Prepare()
 
 void UpdateDialog::ShowInfo()
 {
-    auto &info = baka->update->getInfo();
+    auto &info = kuro->update->getInfo();
     ui->plainTextEdit->setPlainText(info["bugfixes"]);
-    if(info["version"].trimmed() == BAKA_MPLAYER_VERSION)
+    if(info["version"].trimmed() == KURO_PLAYER_VERSION)
     {
 #if defined(Q_OS_WIN)
         ui->updateButton->setEnabled(false);
